@@ -29,21 +29,36 @@
 
 /*CSS do exercício 2*/
 .super-mario {
+    position: absolute;
     width: 200px;
 }
   
 .goomba {
+    position: absolute;
+    top: 550px;
+    left: 50px;
     width: 100px;
 }
   
 .baloon {
-  
+    position: absolute;
+    z-index: 2;
+    top: 355px;
+    left: 250px;
 }
   
 .speach {
+    position: absolute;
+    z-index: 3;
+    top: 400px;
+    left: 270px;
     font-size: 25px;
 }
   
 .bowser {
+    position: absolute;
+    z-index: 1;
+    top: 450px;
+    left: 525px;
     width: 200px;
 }
