@@ -32,6 +32,10 @@
     height: 425px;
 }
 
+.exercicio-2:hover {
+    border: none;
+}
+
 .super-mario, .goomba, .baloon, .speach, .bowser {
     position: relative;
     display: inline-block;
@@ -66,4 +70,54 @@
     width: 200px;
 }
 
-/*CSS do exercício 3*/
+/*CSS do exercício 3.1*/
+h1, p {
+    text-align: center;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+ol:hover {
+    background-color: red;
+}
+
+li:active {
+    color: blue;
+}
+
+/*CSS do exercício 3.2*/
+.exercicio-3-2 div:hover {
+    border: 1px solid black;
+}
+
+.exercicio-3-2 div:nth-child(2n+1) {
+    font-style: italic;
+}
+
+.exercicio-3-2 div:nth-child(3) {
+    background-color: blue;
+    color: red;
+}
+
+.exercicio-3-2 div:nth-child(4) {
+    background-color: purple;
+    color: orange;
+}
+
+.exercicio-3-2 div:nth-child(5) {
+    background-color: orange;
+    padding: 5px;
+    color: green;
+}
+
+.exercicio-3-2 div:nth-child(6) {
+    background-color: darkblue;
+    color: darkred;
+}
+
+.exercicio-3-2 div:nth-child(7) {
+    background-color: lightblue;
+    color: lightcoral;
+}
