@@ -71,19 +71,19 @@
 }
 
 /*CSS do exercício 3.1*/
-h1, p {
+.exercicio-3-1 h1, .exercicio-3-1 p {
     text-align: center;
 }
 
-ol, ul {
+.exercicio-3-1 ol, .exercicio-3-1 ul {
     list-style: none;
 }
 
-ol:hover {
+.exercicio-3-1 ol:hover {
     background-color: red;
 }
 
-li:active {
+.exercicio-3-1 li:active {
     color: blue;
 }
 
@@ -96,28 +96,91 @@ li:active {
     font-style: italic;
 }
 
-.exercicio-3-2 div:nth-child(3) {
+.exercicio-3-2 div:nth-of-type(1) {
     background-color: blue;
     color: red;
 }
 
-.exercicio-3-2 div:nth-child(4) {
+.exercicio-3-2 div:nth-of-type(2) {
     background-color: purple;
     color: orange;
 }
 
-.exercicio-3-2 div:nth-child(5) {
+.exercicio-3-2 div:nth-of-type(3) {
     background-color: orange;
-    padding: 5px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
     color: green;
 }
 
-.exercicio-3-2 div:nth-child(6) {
+.exercicio-3-2 div:nth-of-type(4) {
     background-color: darkblue;
     color: darkred;
 }
 
-.exercicio-3-2 div:nth-child(7) {
+.exercicio-3-2 div:nth-of-type(5) {
     background-color: lightblue;
     color: lightcoral;
+}
+
+/*CSS do exercício 4*/
+.exercicio-4 h1, .exercicio-4 h2, .exercicio-4 h3 {
+    color: red;
+}
+
+.exercicio-4 h1 em, .exercicio-4 h2 em, .exercicio-4 h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.exercicio-4 ol li {
+    background-color: yellow;
+}
+
+.exercicio-4 ol li:nth-child(2n) {
+    color: green;
+}
+
+.exercicio-4 ol li:nth-child(2n+1) {
+    text-transform: uppercase;
+}
+
+.exercicio-4 li {
+    font-size: 20px;
+}
+
+.exercicio-4 li em {
+    font-weight: bold;
+}
+
+.linguagens-de-programacao li:not(:nth-child(n+4)) {
+    color: blue
+}  
+
+.fundo-rosa {
+    background-color: pink;
+}
+
+.aliados a:hover {
+    font-weight: bold;
+}
+
+.aliados a[href*="stackoverflow"]:hover {
+    color: orange;
+}
+
+.aliados a[href*="w3schools"]:hover {
+    color: green;
+}
+
+.aliados a[href*="mozilla"]:hover {
+    color: black;
+}
+
+.aliados a[href*="devdocs"]:hover {
+    color: yellow;
+}
+
+.aliados a[href*="trybe"]:hover {
+    color: green;
 }
