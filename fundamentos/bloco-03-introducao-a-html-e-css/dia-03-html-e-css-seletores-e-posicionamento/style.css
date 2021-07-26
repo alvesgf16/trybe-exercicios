@@ -84,7 +84,8 @@
 }
 
 .exercicio-3-1 li:active {
-    color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 /*CSS do exercício 3.2*/
