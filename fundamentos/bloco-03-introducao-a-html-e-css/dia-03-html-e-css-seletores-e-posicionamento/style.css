@@ -1,0 +1,187 @@
+/*CSS do exercício 1*/
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: top;
+}
+  
+.width-and-height {
+    height: 50px;
+    width: 50px;
+}
+  
+/* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+.padding {
+    padding: 20px;
+}
+  
+/* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+.margin {
+    margin: 30px;
+}
+  
+/* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+.border {
+    border: 5px solid black;
+}
+
+/*CSS do exercício 2*/
+.exercicio-2 {
+    height: 425px;
+}
+
+.exercicio-2:hover {
+    border: none;
+}
+
+.super-mario, .goomba, .baloon, .speach, .bowser {
+    position: relative;
+    display: inline-block;
+}
+.super-mario {
+    width: 200px;
+}
+  
+.goomba {
+    top: 125px;
+    left: -150px;
+    width: 100px;
+}
+  
+.baloon {
+    z-index: 2;
+    top: -100px;
+    left: -500px;
+}
+  
+.speach {
+    z-index: 3;
+    top: -200px;
+    left: -230px;
+    font-size: 25px;
+}
+  
+.bowser {
+    z-index: 1;
+    top: 35px;
+    left: 250px;
+    width: 200px;
+}
+
+/*CSS do exercício 3.1*/
+.exercicio-3-1 h1, .exercicio-3-1 p {
+    text-align: center;
+}
+
+.exercicio-3-1 ol, .exercicio-3-1 ul {
+    list-style: none;
+}
+
+.exercicio-3-1 ol:hover {
+    background-color: red;
+}
+
+.exercicio-3-1 li:active {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+/*CSS do exercício 3.2*/
+.exercicio-3-2 div:hover {
+    border: 1px solid black;
+}
+
+.exercicio-3-2 div:nth-child(2n+1) {
+    font-style: italic;
+}
+
+.exercicio-3-2 div:nth-of-type(1) {
+    background-color: blue;
+    color: red;
+}
+
+.exercicio-3-2 div:nth-of-type(2) {
+    background-color: purple;
+    color: orange;
+}
+
+.exercicio-3-2 div:nth-of-type(3) {
+    background-color: orange;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    color: green;
+}
+
+.exercicio-3-2 div:nth-of-type(4) {
+    background-color: darkblue;
+    color: darkred;
+}
+
+.exercicio-3-2 div:nth-of-type(5) {
+    background-color: lightblue;
+    color: lightcoral;
+}
+
+/*CSS do exercício 4*/
+.exercicio-4 h1, .exercicio-4 h2, .exercicio-4 h3 {
+    color: red;
+}
+
+.exercicio-4 h1 em, .exercicio-4 h2 em, .exercicio-4 h3 em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+.exercicio-4 ol li {
+    background-color: yellow;
+}
+
+.exercicio-4 ol li:nth-child(2n) {
+    color: green;
+}
+
+.exercicio-4 ol li:nth-child(2n+1) {
+    text-transform: uppercase;
+}
+
+.exercicio-4 li {
+    font-size: 20px;
+}
+
+.exercicio-4 li em {
+    font-weight: bold;
+}
+
+.linguagens-de-programacao li:not(:nth-child(n+4)) {
+    color: blue
+}  
+
+.fundo-rosa {
+    background-color: pink;
+}
+
+.aliados a:hover {
+    font-weight: bold;
+}
+
+.aliados a[href*="stackoverflow"]:hover {
+    color: orange;
+}
+
+.aliados a[href*="w3schools"]:hover {
+    color: green;
+}
+
+.aliados a[href*="mozilla"]:hover {
+    color: black;
+}
+
+.aliados a[href*="devdocs"]:hover {
+    color: yellow;
+}
+
+.aliados a[href*="trybe"]:hover {
+    color: green;
+}
