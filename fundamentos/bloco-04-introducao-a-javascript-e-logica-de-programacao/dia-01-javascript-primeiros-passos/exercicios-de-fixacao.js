@@ -1,11 +1,28 @@
-let nota = 40;
+let nota = 80;
 
 console.log(nota);
 
 if (nota >= 80) {
-    console.log("Parabéns, você foi aprovado(a)");
+    resultado = "aprovada";
 } else if (nota >= 60) {
-    console.log("Você está na nossa lista de espera");
+    resultado = "lista";
 } else {
-    console.log("Você foi reprovado(a)")
+    resultado = "reprovada"
+}
+
+switch (resultado) {
+    case "aprovada":
+       console.log("Parabéns, você foi aprovado(a)");
+       break;
+
+    case "lista":
+        console.log("Você está na nossa lista de espera");
+        break;
+
+    case "reprovada":
+        console.log("Você foi reprovado(a)");
+        break;
+
+    default:
+        console.log("Não se aplica");
 }
