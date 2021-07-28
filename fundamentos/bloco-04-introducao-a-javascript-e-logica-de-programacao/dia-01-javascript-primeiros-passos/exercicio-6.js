@@ -1,15 +1,20 @@
-let piece = "PAWN";
+let piece = "ronaldo";
+let movement;
 
 if (piece.toLowerCase() == "pawn") {
-    console.log("forward one square");
+    movement = "forward one square";
 } else if (piece.toLowerCase() == "knight") {
-    console.log("in an 'L' shape");
+    movement = "in an 'L' shape";
 } else if (piece.toLowerCase() == "bishop") {
-    console.log("diagonally");
+    movement = "diagonally";
 } else if (piece.toLowerCase() == "rook") {
-    console.log("horizontally or vertically");
+    movement = "horizontally or vertically";
 } else if (piece.toLowerCase() == "queen") {
-    console.log("any direction");
+    movement = "any direction";
 } else if (piece.toLowerCase() == "king") {
-    console.log("one square in any direction");
+    movement = "one square in any direction";
+} else {
+    movement = "not a valid piece";
 }
+
+console.log(movement)
