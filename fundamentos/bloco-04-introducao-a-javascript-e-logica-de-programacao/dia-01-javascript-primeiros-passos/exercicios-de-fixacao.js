@@ -1,11 +1,14 @@
-const myName = "Gabriel";
-const birthCity = "Aracaju";
-let birthYear = 1994;
+let patientId = 50;
+let isEnrolled = true;
+const patientInfo = {
+  firstName: 'Ana',
+  lastName: 'Santos',
+};
+const patientEmail = 'ana@email.com';
 
-console.log(myName, birthCity, birthYear);
+console.log(typeof patientAge);
+console.log(typeof patientId);
 
-birthYear = 2030;
+patientId = '50';
 
-console.log(birthYear);
-
-birthCity = "Capela";
+console.log(typeof patientId);
