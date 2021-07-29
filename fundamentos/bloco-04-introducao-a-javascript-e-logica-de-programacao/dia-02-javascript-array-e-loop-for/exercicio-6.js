@@ -9,4 +9,8 @@ for(let number of numbers) {
     }
 }
 
-console.log(quantidadeDeNumerosImpares);
+if quantidadeDeNumerosImpares > 0 {
+    console.log(quantidadeDeNumerosImpares);
+} else {
+    console.log("nenhum valor ímpar encontrado")
+}
