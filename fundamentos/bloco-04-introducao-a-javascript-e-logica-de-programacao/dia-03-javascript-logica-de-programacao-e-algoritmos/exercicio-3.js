@@ -1,9 +1,17 @@
 let n = 5;
-let numeroDeAstericosNaLinha = 1;
-let str = "*";
-let blank = " ";
+let numeroDeAsteriscosNaLinha = 1;
 
-for (i = 1; i <= n; i += 1) {
-    console.log(blank.repeat(n - numeroDeAstericosNaLinha) + str.repeat(numeroDeAstericosNaLinha));
-    numeroDeAstericosNaLinha += 1;
+for (linha = 1; linha <= n; linha += 1) {
+    let str = "";
+
+    for (espaçosEmBranco = 1; espaçosEmBranco <= (n - numeroDeAsteriscosNaLinha); espaçosEmBranco += 1) {
+        str += " ";
+    }
+
+    for (asteriscos = 1; asteriscos <= numeroDeAsteriscosNaLinha; asteriscos += 1) {
+        str += "*";
+    }
+
+    console.log(str);
+    numeroDeAsteriscosNaLinha += 1;
 }
