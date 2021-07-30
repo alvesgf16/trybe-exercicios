@@ -3,6 +3,6 @@
 let n = 10;
 let str = "*"
 
-for (linha = 1; linha <= n; linha += 1) {
+for (lado = 1; lado <= n; lado += 1) {
         console.log(str.repeat(n))
 }
