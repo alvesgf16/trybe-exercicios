@@ -10,7 +10,7 @@ function returnSmallestIndex(array) {
         }
     }
 
-    return array.indexOf(smallestNumber);
+    return console.log(array.indexOf(smallestNumber));
 }
 
-console.log(returnSmallestIndex([2, 4, 6, 7, 10, 0, -3]));
+returnSmallestIndex([2, 4, 6, 7, 10, 0, -3]);

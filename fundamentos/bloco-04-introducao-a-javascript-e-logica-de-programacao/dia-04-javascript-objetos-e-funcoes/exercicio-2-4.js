@@ -13,7 +13,7 @@ function returnLongestName(array) {
         }
     }
     
-    return longestName;
+    return console.log(longestName);
 }
 
-console.log(returnLongestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+returnLongestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);

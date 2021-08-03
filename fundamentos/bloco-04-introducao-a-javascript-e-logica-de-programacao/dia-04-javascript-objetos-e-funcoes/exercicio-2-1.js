@@ -5,13 +5,13 @@
 // verificaPalindrome('desenvolvimento') ;
 // Retorno esperado: false
 
-function verificaPalindrome(string) {
-    let reversed = string.split("").reverse().join("");
-    if (reversed == string) {
-        return true;
+function verificaPalindrome(word) {
+    let reversedWord = word.split("").reverse().join("");
+    if (reversedWord === word) {
+        return console.log(true);
     } else {
-        return false;
+        return console.log(false);
     }
 }
 
-console.log(verificaPalindrome('arara'));
+verificaPalindrome('arara');

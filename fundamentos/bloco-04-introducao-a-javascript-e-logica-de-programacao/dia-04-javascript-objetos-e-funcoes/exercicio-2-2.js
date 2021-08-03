@@ -10,7 +10,7 @@ function returnBiggestIndex(array) {
         }
     }
 
-    return array.indexOf(biggestNumber);
+    return console.log(array.indexOf(biggestNumber));
 }
 
-console.log(returnBiggestIndex([2, 3, 6, 7, 10, 1]));
+returnBiggestIndex([2, 3, 6, 7, 10, 1]);
