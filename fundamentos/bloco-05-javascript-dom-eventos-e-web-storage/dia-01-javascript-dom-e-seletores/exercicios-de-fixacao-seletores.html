@@ -8,17 +8,17 @@
       <p id="second-paragraph" class="paragraph">Segundo parágrafo!</p>
     </header>
     <script>
-      const paragraph = document.getElementById("paragraph");
+      const paragraph = document.querySelector("#paragraph");
       paragraph.style.color = "red";
-      const title = document.getElementById("page-title");
+      const title = document.querySelector("#page-title");
       title.innerHTML = "Capitão América 2 - O Soldado Invernal";
-      const secondParagraph = document.getElementById("second-paragraph");
+      const secondParagraph = document.querySelector("#second-paragraph");
       secondParagraph.style.color = "red";
-      const subtitle = document.getElementById("subtitle");
+      const subtitle = document.querySelector("#subtitle");
       subtitle.innerHTML = "Quando tudo mudou e o universo se expandiu pela primeira vez";
-      const paragrafos = document.getElementsByClassName("paragraph");
+      const paragrafos = document.querySelectorAll(".paragraph");
       paragrafos[0].style.textDecoration = "underline";
-      const subtitleButDifferent = document.getElementsByTagName("h4");
+      const subtitleButDifferent = document.querySelectorAll("h4");
       subtitleButDifferent[0].style.backgroundColor = "darkblue";
       subtitleButDifferent[0].style.color = "white";
     </script>
