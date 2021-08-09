@@ -63,6 +63,13 @@
             document.getElementsByTagName("h1")[0].innerHTML = "Exercício 5.1 - JavaScript"
         }
 //  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
+        function toUppercase() {
+            const paragraphs = document.getElementsByTagName("p");
+
+            for (let i = 0; i < paragraphs.length; i += 1) {
+                paragraphs[i].style.textTransform = "uppercase";
+            }
+        }
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
     </script>
   </body>
