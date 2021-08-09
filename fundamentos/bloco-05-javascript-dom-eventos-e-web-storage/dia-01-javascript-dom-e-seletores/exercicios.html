@@ -71,6 +71,13 @@
             }
         }
 //  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
+        function showTextinConsole() {
+            const paragraphs = document.getElementsByTagName("p");
+
+            for (let i = 0; i < paragraphs.length; i += 1) {
+                console.log(paragraphs[i].innerHTML);
+            }
+        }
     </script>
   </body>
 </html>
