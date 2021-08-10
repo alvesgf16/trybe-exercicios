@@ -72,6 +72,14 @@
       let someText = document.createElement('p');
       someText.innerText = 'Algum texto';
       centerSection.appendChild(someText);
+
+      let leftSection = document.createElement('section');
+      leftSection.className = 'left-content';
+      mainSection.appendChild(leftSection);
+
+      let rightSection = document.createElement('section');
+      rightSection.className = 'right-content';
+      mainSection.appendChild(rightSection);
     </script>
   </body>
 </html>
