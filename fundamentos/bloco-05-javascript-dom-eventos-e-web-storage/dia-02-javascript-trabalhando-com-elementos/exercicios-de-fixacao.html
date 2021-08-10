@@ -6,14 +6,14 @@
     <body>
         <main id="paiDoPai">
             <section id="pai">
-            <section id="primeiroFilho"></section>
-            <section id="elementoOndeVoceEsta">
-                <section id="primeiroFilhoDoFilho"></section>
-                <section id="segundoEUltimoFilhoDoFilho"></section>
-            </section>
+                <section id="primeiroFilho"></section>
+                <section id="elementoOndeVoceEsta">
+                    <section id="primeiroFilhoDoFilho"></section>
+                    <section id="segundoEUltimoFilhoDoFilho"></section>
+                </section>
                 Atenção!
-            <section id="terceiroFilho"></section>
-            <section id="quartoEUltimoFilho"></section>
+                <section id="terceiroFilho"></section>
+                <section id="quartoEUltimoFilho"></section>
             </section>
         </main>
         <script>
@@ -27,7 +27,7 @@
             let thirdSon = parentElement.children[2];
 
             let newBrother = document.createElement("section");
-            newBrotherid = "quintoFilho";
+            newBrother.id = "quintoFilho";
             parentElement.appendChild(newBrother);
 
             let babyBrother = parentElement.children[4];
@@ -47,29 +47,40 @@
             let greatUncle = grandson.parentElement.parentElement.nextElementSibling;
 
             let family = document.querySelectorAll("section");
-
-            for (let member = 0; member < family.length; member += 1) {
-                if (family[member] !== parentElement && family[member] !== currentElement && family[member] !== firstBorn) {
-                    family.removeChild(family[member]);
-                }
-            }
+            let unwantedFamilyMembers = [];
 
             parentElement.style.backgroundColor = "blue";
 
             firstBorn.innerHTML = "Luke, eu sou seu pai!"
 
-            console.log(currentElement);
-            console.log(parentElement);
-            console.log(firstBorn);
-            console.log(oldestSon);
-            console.log(bigBrother);
-            console.log(relatedText);
-            console.log(middleBrother);
-            console.log(thirdSon);
-            console.log(babyBrother);
-            console.log(baby);
-            console.log(grandson);
-            console.log(greatUncle);
+            // console.log(currentElement);
+            // console.log(parentElement);
+            // console.log(firstBorn);
+            // console.log(oldestSon);
+            // console.log(bigBrother);
+            // console.log(relatedText);
+            // console.log(middleBrother);
+            // console.log(thirdSon);
+            // console.log(babyBrother);
+            // console.log(baby);
+            // console.log(grandson);
+            // console.log(greatUncle);
+
+            let numberOfFamilyMembers = family.length;
+
+            for (let member = 0; member < family.length; member += 1) {
+                if (family[member] !== parentElement && family[member] !== currentElement && family[member] !== firstBorn) {
+                    unwantedFamilyMembers.push(family[member]);
+                }
+            }
+
+            console.log(unwantedFamilyMembers);
+
+            for (let i = 0; i < unwantedFamilyMembers.length; i += 1) {
+                let unwantedMember = unwantedFamilyMembers[i];
+                console.log(unwantedMember.parentNode);
+                unwantedMember.remove();
+            }
         </script>
     </body>
     
