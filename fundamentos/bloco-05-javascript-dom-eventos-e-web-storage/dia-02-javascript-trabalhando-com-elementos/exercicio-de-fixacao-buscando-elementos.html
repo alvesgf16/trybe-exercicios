@@ -29,8 +29,14 @@
             let newBrother = document.createElement("section");
             newBrother.setAttribute("id","quintoFilho");
             parentElement.appendChild(newBrother);
-            
+
             let babyBrother = parentElement.children[4];
+
+            let newBorn = document.createElement("section");
+            newBorn.setAttribute("id","terceiroFilhoDoFilho");
+            currentElement.appendChild(newBorn);
+
+            let baby = currentElement.children[2];
 
             parentElement.style.backgroundColor = "blue";
 
@@ -45,6 +51,7 @@
             console.log(middleBrother);
             console.log(thirdSon);
             console.log(babyBrother);
+            console.log(baby);
         </script>
     </body>
     
