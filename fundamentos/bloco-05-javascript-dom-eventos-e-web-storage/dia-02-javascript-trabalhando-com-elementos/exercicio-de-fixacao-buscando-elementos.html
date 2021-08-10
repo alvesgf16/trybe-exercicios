@@ -38,6 +38,12 @@
 
             let baby = currentElement.children[2];
 
+            let newGrandson = document.createElement("section");
+            newGrandson.setAttribute("id","filhoDoFilhoDoFilho");
+            firstBorn.appendChild(newGrandson);
+
+            let grandson = firstBorn.children[0];
+
             parentElement.style.backgroundColor = "blue";
 
             firstBorn.innerHTML = "Luke, eu sou seu pai!"
@@ -52,6 +58,7 @@
             console.log(thirdSon);
             console.log(babyBrother);
             console.log(baby);
+            console.log(grandson);
         </script>
     </body>
     
