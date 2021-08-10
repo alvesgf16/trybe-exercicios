@@ -19,11 +19,15 @@
         <script>
             let currentElement = document.getElementById('elementoOndeVoceEsta');
             let parentElement = currentElement.parentElement;
+            let firstBorn = currentElement.children[0];
 
             parentElement.style.backgroundColor = "blue";
 
+            firstBorn.innerHTML = "Luke, eu sou seu pai!"
+
             console.log(currentElement);
             console.log(parentElement);
+            console.log(firstBorn);
         </script>
     </body>
     
