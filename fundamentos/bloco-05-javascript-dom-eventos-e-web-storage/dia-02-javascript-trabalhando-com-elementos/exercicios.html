@@ -92,6 +92,10 @@
           let numberElement = document.createElement('li');
           numberElement.innerText = numbersInWords[i];
           numbersList.appendChild(numberElement);
+
+          if (numberElement.innerText.includes('nove') || numberElement.innerText.includes('dez')) {
+          numbersList.removeChild(numberElement);
+          }
       }
       rightSection.appendChild(numbersList);
 
@@ -112,7 +116,6 @@
       rightSection.style.marginRight = 'auto';
 
       centerSection.parentElement.style.backgroundColor = 'green';
-
     </script>
   </body>
 </html>
