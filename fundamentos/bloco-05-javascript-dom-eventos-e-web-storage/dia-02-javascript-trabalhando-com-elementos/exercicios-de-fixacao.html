@@ -17,7 +17,7 @@
             </section>
         </main>
         <script>
-            let currentElement = document.getElementById('elementoOndeVoceEsta');
+            let currentElement = document.getElementById("elementoOndeVoceEsta");
             let parentElement = currentElement.parentElement;
             let firstBorn = currentElement.children[0];
             let oldestSon = parentElement.children[0];
@@ -25,6 +25,34 @@
             let relatedText = currentElement.nextSibling;
             let middleBrother = currentElement.nextElementSibling;
             let thirdSon = parentElement.children[2];
+
+            let newBrother = document.createElement("section");
+            newBrotherid = "quintoFilho";
+            parentElement.appendChild(newBrother);
+
+            let babyBrother = parentElement.children[4];
+
+            let newBorn = document.createElement("section");
+            newBorn.id = "terceiroFilhoDoFilho";
+            currentElement.appendChild(newBorn);
+
+            let baby = currentElement.children[2];
+
+            let newGrandson = document.createElement("section");
+            newGrandson.id = "filhoDoFilhoDoFilho";
+            firstBorn.appendChild(newGrandson);
+
+            let grandson = firstBorn.children[0];
+
+            let greatUncle = grandson.parentElement.parentElement.nextElementSibling;
+
+            let family = document.querySelectorAll("section");
+
+            for (let member = 0; member < family.length; member += 1) {
+                if (family[member] != parentElement || family[member] != currentElement || family[member] != firstBorn) {
+                    family.removeChild(family[member]);
+                }
+            }
 
             parentElement.style.backgroundColor = "blue";
 
@@ -38,6 +66,11 @@
             console.log(relatedText);
             console.log(middleBrother);
             console.log(thirdSon);
+            console.log(babyBrother);
+            console.log(baby);
+            console.log(grandson);
+            console.log(greatUncle);
+            console.log(family);
         </script>
     </body>
     
