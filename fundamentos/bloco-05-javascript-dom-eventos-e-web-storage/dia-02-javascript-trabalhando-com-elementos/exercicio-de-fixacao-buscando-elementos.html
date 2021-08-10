@@ -18,8 +18,12 @@
         </main>
         <script>
             let currentElement = document.getElementById('elementoOndeVoceEsta');
+            let parentElement = currentElement.parentElement;
+
+            parentElement.style.backgroundColor = "blue";
 
             console.log(currentElement);
+            console.log(parentElement);
         </script>
     </body>
     
