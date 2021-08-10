@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="paragraph">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.querySelector("#paragraph");
+      paragraph.style.color = "red";
+      const title = document.querySelector("#page-title");
+      title.innerHTML = "Capitão América 2 - O Soldado Invernal";
+      const secondParagraph = document.querySelector("#second-paragraph");
+      secondParagraph.style.color = "red";
+      const subtitle = document.querySelector("#subtitle");
+      subtitle.innerHTML = "Quando tudo mudou e o universo se expandiu pela primeira vez";
+      const paragrafos = document.querySelectorAll(".paragraph");
+      paragrafos[0].style.textDecoration = "underline";
+      const subtitleButDifferent = document.querySelectorAll("h4");
+      subtitleButDifferent[0].style.backgroundColor = "darkblue";
+      subtitleButDifferent[0].style.color = "white";
+    </script>
+  </body>
+</html>
