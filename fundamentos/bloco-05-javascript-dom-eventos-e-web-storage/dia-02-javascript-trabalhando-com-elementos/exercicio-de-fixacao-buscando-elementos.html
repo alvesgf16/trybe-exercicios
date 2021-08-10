@@ -44,6 +44,8 @@
 
             let grandson = firstBorn.children[0];
 
+            let greatUncle = grandson.parentElement.parentElement.nextElementSibling;
+
             parentElement.style.backgroundColor = "blue";
 
             firstBorn.innerHTML = "Luke, eu sou seu pai!"
@@ -59,6 +61,7 @@
             console.log(babyBrother);
             console.log(baby);
             console.log(grandson);
+            console.log(greatUncle);
         </script>
     </body>
     
