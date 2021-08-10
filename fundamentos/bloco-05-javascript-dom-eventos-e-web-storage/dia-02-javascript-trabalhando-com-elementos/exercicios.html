@@ -85,6 +85,15 @@
       smallImage.setAttribute('src','https://picsum.photos/200');
       smallImage.className = 'small-image';
       leftSection.appendChild(smallImage);
+
+      let numbersList = document.createElement('ul');
+      let numbersInWords = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i = 0; i < numbersInWords.length; i += 1) {
+          let numberElement = document.createElement('li');
+          numberElement.innerText = numbersInWords[i];
+          numbersList.appendChild(numberElement);
+      }
+      rightSection.appendChild(numbersList);
     </script>
   </body>
 </html>
