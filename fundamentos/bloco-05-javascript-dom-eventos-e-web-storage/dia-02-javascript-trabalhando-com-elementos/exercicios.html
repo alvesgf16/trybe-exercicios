@@ -94,6 +94,15 @@
           numbersList.appendChild(numberElement);
       }
       rightSection.appendChild(numbersList);
+
+      for (let j = 0; j < 3; j += 1) {
+        mainSection.appendChild(document.createElement('h3'));
+      }
+      let subtitles = document.getElementsByTagName('h3');
+      for (let k = 0; k < subtitles.length; k += 1) {
+          subtitles[k].innerText = 'Insira um subtítulo aqui';
+      }
+
     </script>
   </body>
 </html>
