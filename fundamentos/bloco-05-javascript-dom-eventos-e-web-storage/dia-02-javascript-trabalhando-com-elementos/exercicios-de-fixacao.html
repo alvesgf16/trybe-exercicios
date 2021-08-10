@@ -49,7 +49,7 @@
             let family = document.querySelectorAll("section");
 
             for (let member = 0; member < family.length; member += 1) {
-                if (family[member] != parentElement || family[member] != currentElement || family[member] != firstBorn) {
+                if (family[member] !== parentElement && family[member] !== currentElement && family[member] !== firstBorn) {
                     family.removeChild(family[member]);
                 }
             }
@@ -70,7 +70,6 @@
             console.log(baby);
             console.log(grandson);
             console.log(greatUncle);
-            console.log(family);
         </script>
     </body>
     
