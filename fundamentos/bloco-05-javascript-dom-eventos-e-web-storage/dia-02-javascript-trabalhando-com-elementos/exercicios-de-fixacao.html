@@ -17,54 +17,62 @@
             </section>
         </main>
         <script>
+            // Acesse o elemento elementoOndeVoceEsta
             let currentElement = document.getElementById("elementoOndeVoceEsta");
+
+            // Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
             let parentElement = currentElement.parentElement;
+
+
+            parentElement.style.backgroundColor = "blue";
+
+            // Acesse o primeiroFilhoDoFilho e adicione um texto a ele.
             let firstBorn = currentElement.children[0];
+
+            firstBorn.innerHTML = "Luke, eu sou seu pai!"
+
+            // Acesse o primeiroFilho a partir de pai .
             let oldestSon = parentElement.children[0];
+
+            // Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
             let bigBrother = currentElement.previousElementSibling;
+
+            // Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
             let relatedText = currentElement.nextSibling;
+
+            // Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
             let middleBrother = currentElement.nextElementSibling;
+
+            // Agora acesse o terceiroFilho a partir de pai .
             let thirdSon = parentElement.children[2];
 
+            // Crie um irmão para elementoOndeVoceEsta .
             let newBrother = document.createElement("section");
             newBrother.id = "quintoFilho";
             parentElement.appendChild(newBrother);
 
             let babyBrother = parentElement.children[4];
 
+            // Crie um filho para elementoOndeVoceEsta .
             let newBorn = document.createElement("section");
             newBorn.id = "terceiroFilhoDoFilho";
             currentElement.appendChild(newBorn);
 
             let baby = currentElement.children[2];
 
+            // Crie um filho para primeiroFilhoDoFilho .
             let newGrandson = document.createElement("section");
             newGrandson.id = "filhoDoFilhoDoFilho";
             firstBorn.appendChild(newGrandson);
 
             let grandson = firstBorn.children[0];
 
+            // A partir desse filho criado, acesse terceiroFilho .
             let greatUncle = grandson.parentElement.parentElement.nextElementSibling;
 
+            // Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
             let family = document.querySelectorAll("section");
             let unwantedFamilyMembers = [];
-
-            parentElement.style.backgroundColor = "blue";
-
-            firstBorn.innerHTML = "Luke, eu sou seu pai!"
-
-            // console.log(currentElement);
-            // console.log(parentElement);
-            // console.log(firstBorn);
-            // console.log(oldestSon);
-            // console.log(bigBrother);
-            // console.log(relatedText);
-            // console.log(middleBrother);
-            // console.log(thirdSon);
-            // console.log(babyBrother);
-            // console.log(baby);
-            // console.log(grandson);
-            // console.log(greatUncle);
 
             let numberOfFamilyMembers = family.length;
 
