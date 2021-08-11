@@ -4,7 +4,6 @@ const thirdLi = document.getElementById('third-li');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('my-spotrybefy');
 
-
 // 1. Copie esse arquivo e edite apenas ele;
 
 /*
@@ -35,6 +34,11 @@ input.addEventListener('keyup', addTextToSelectedElement)
 redirecione para alguma página;
 4.1. Que tal redirecionar para seu portifólio?
 */
+function redirectToPortfolio() {
+    window.location.href = "https://alvesgf16.github.io";
+}
+
+myWebpage.addEventListener('dblclick', redirectToPortfolio);
 
 // 5. Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere a cor do mesmo;
 
