@@ -1,8 +1,9 @@
-let a = 4;
-let b = 3;
-
-if (a > b) {
-    console.log(a);
-} else {
-    console.log(b);
+function returnTheBigger(a,b) {
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
 }
+
+console.log(returnTheBigger(10,8));
