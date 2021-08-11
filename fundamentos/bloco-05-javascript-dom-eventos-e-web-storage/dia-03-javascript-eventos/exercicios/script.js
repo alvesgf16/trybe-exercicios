@@ -42,7 +42,16 @@ function createDecemberDays() {
 
         daysList.appendChild(day);
     }
-    
+}
+
+let buttonsContainer = document.querySelector('.buttons-container');
+
+function createHolidayButton(string) {
+    let holidayButton = document.createElement('button');
+    holidayButton.innerText = string;
+    holidayButton.id = 'btn-holiday';
+    buttonsContainer.appendChild(holidayButton);
 }
 
 createDecemberDays();
+createHolidayButton('Feriados');
