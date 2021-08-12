@@ -20,7 +20,6 @@ Os dias devem estar contidos em uma tag <li> , e todos devem ter a classe day . 
 Os dias 24, 25 e 31 são feriados e, além da classe day , devem conter também a classe holiday . Ex: <li class="day holiday">24</li>
 Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday . Ex: <li class="day friday">4</li>
 */
-
 function createDecemberDays() {
     const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     let daysList = document.getElementById('days');
@@ -52,12 +51,11 @@ Implemente uma função que receba como parâmetro a string "Feriados" e crie di
 Adicione a este botão a ID "btn-holiday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
-
 let buttonsContainer = document.querySelector('.buttons-container');
 
-function createHolidayButton(string) {
+function createHolidayButton(holidayStr) {
     let holidayButton = document.createElement('button');
-    holidayButton.innerText = string;
+    holidayButton.innerText = holidayStr;
     holidayButton.id = 'btn-holiday';
     buttonsContainer.appendChild(holidayButton);
 
@@ -97,10 +95,9 @@ Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie
 Adicione a este botão o ID "btn-friday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
-
-function createFridayButton(string) {
+function createFridayButton(fridayStr) {
     let fridayButton = document.createElement('button');
-    fridayButton.innerText = string;
+    fridayButton.innerText = fridayStr;
     fridayButton.id = 'btn-friday';
     buttonsContainer.appendChild(fridayButton);
 
@@ -150,3 +147,17 @@ function zoomIn(event) {
 function zoomOut(event) {
     event.target.style.fontSize = '20px';
 }
+
+/*
+Exercício 7:
+Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
+O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
+*/
+function addTask(taskStr) {
+    let task = document.createElement('span');
+    let taskList = document.querySelector('.my-tasks');
+    task.innerText = taskStr;
+    taskList.appendChild(task);
+}
+
+addTask('Terminar exercícios do dia');
