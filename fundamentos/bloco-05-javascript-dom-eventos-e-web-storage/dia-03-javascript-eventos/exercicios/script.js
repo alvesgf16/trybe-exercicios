@@ -37,9 +37,13 @@ function createDecemberDays() {
             day.classList.add('friday');
         }
 
+        day.classList.add('dayFree');
+        day.style.cursor = 'default';
+
         daysList.appendChild(day);
         day.addEventListener('mouseenter', zoomIn);
         day.addEventListener('mouseleave', zoomOut);
+        day.addEventListener('click', toggleTaskToDay);
     }
 }
 
@@ -77,12 +81,21 @@ function toggleHolidays() {
     if (holidaysOn) {
         for (let i = 0; i < holidays.length; i += 1) {
             holidays[i].style.backgroundColor = 'rgb(238,238,238)';
+            
+            if (holidays[i].classList.contains('dayFree')) {
+                holidays[i].style.color = 'rgb(119,119,119)'
+            }
+
+            if (holidays[i].classList.contains('busyDay')) {
+                holidays[i].style.color = document.querySelector('.task-selected').style.backgroundColor
+            }
         }
 
         holidaysOn = false;
     } else {
         for (i = 0; i < holidays.length; i += 1) {
-            holidays[i].style.backgroundColor = 'rgb(202, 197, 252)';
+            holidays[i].style.backgroundColor = 'rgb(13, 89, 1)';
+            holidays[i].style.color = 'rgb(179,0,12)';
         }
 
         holidaysOn = true;
@@ -178,7 +191,7 @@ function addLabel(colorStr) {
     label.addEventListener('click', selectTask);
 }
 
-addLabel('red');
+addLabel('rgb(182, 160, 84)');
 
 /*
 Exercício 9:
@@ -191,12 +204,31 @@ function selectTask() {
     if (taskSelected) {
         let taskSelector = document.querySelector('.task-selected');
         taskSelector.className = 'task';
+        taskSelector.previousElementSibling.style.textDecoration = 'none';
 
         taskSelected = false;
     } else {
         let taskSelector = document.querySelector('.task');
         taskSelector.className = 'task-selected';
+        taskSelector.previousElementSibling.style.textDecoration = 'underline';
 
         taskSelected = true;
+    }
+}
+
+/*
+Exercício 10:
+Implemente uma função que adiciona um evento que, ao clicar em um dia do mês no calendário, atribua a este dia a cor da legenda da sua tarefa selecionada.
+Ao clicar novamente no dia com a cor da legenda, a sua cor deverá voltar à configuração inicial rgb(119,119,119) .
+*/
+function toggleTaskToDay(event) {
+    if (event.target.classList.contains('dayFree')) {
+        event.target.style.color = document.querySelector('.task-selected').style.backgroundColor;
+        event.target.classList.remove('dayFree');
+        event.target.classList.add('busyDay');
+    } else if (event.target.classList.contains('busyDay')) {
+        event.target.style.color = 'rgb(119,119,119)';
+        event.target.classList.remove('busyDay');
+        event.target.classList.add('dayFree');
     }
 }
