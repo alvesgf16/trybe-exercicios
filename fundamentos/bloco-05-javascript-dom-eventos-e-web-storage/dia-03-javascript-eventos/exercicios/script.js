@@ -144,9 +144,9 @@ Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do
 Dica - Propriedade: event.target .
 */
 function zoomIn(event) {
-    event.target.style.fontSize = '2em';
+    event.target.style.fontSize = '24px';
 }
 
 function zoomOut(event) {
-    event.target.style.fontSize = '1em';
+    event.target.style.fontSize = '20px';
 }
