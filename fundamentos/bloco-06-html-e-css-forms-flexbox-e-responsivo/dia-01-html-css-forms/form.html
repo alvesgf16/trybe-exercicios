@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <div>
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" maxlength="40" size="40" required>
+        <label for="itin">CPF</label>
+        <input type="text" name="itin" id="itin" maxlength="11" size="14" required>
+      </div>
+      <div>
+        <label for="email">E-mail</label>
+        <input type="text" name="email" id="email" maxlength="50" size="50" required>
+      </div>
+      <div>
+        <label for="address">Endereço</label>
+        <input type="text" name="address" id="address" maxlength="200" size="100" required>
+      </div>
+      <div>
+        <label for="housing-type">Tipo</label>
+        <div id='housing-type'>
+          <input type="radio" name="housing-type" id="house" required checked>
+          <label for="house">Casa</label>
+          <input type="radio" name="housing-type" id="apartment">
+          <label for="apartment">Apartmento</label>
+        </div>
+        <label for="city">Cidade</label>
+        <input type="text" name="city" id="city" maxlength="28" size="28" required>
+        <label for="state-selector">Estado</label>
+        <select name="state" id="state-selector" required>
+          <option disabled selected value="">--Selecione uma opção--</option>
+        </select>
+      </div>
+    </fieldset>
+    <fieldset>
+      <div>
+        <label for="resume-summary">Resumo do currículo</label>
+        <textarea name="resume-summary" id="resume-summary" cols="100" rows="10" maxlength="1000" required></textarea>
+      </div>
+      <div>
+        <label for="role">Cargo</label>
+        <input type="text" name="role" id="role" maxlength="40" size="40" required>
+        <label for="start-date">Data de início</label>
+        <input type="text" name="start-date" id="start-date" size="10" required>
+      </div>
+      <div>
+        <label for="job-description">Descrição do cargo</label>
+        <input type="text" name="job-description" id="job-description" maxlength="500" size="100" required>
+      </div>
+    </fieldset>
+  </form>
+  <button id="submit-resume">Gerar currículo</button>
+  <button id="clear-all">Limpar</button>
+  <script src="script.js"></script>
+</body>
+</html>
