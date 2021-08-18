@@ -1,0 +1,34 @@
+#login {
+  width: 300px;
+  margin: auto;
+  border: 5px solid orange;
+}
+
+#login h1 {
+  text-align: center;
+}
+
+#email , #password {
+  display: block;
+  margin: 10px auto;
+  border: 0px;
+  border-bottom: 2px solid orange;
+  width: 85%;
+  height: 20px;
+  padding-left: 10px;
+}
+
+#remember-me {
+  margin: 10px 5px 10px 15px;
+}
+
+#sign-in {
+  display: block;
+  margin: 10px auto 20px;
+  width: 90%;
+  height: 30px;
+  background-color: orange;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+}
