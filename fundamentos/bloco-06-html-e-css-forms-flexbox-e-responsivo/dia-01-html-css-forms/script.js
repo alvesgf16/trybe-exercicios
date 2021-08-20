@@ -15,50 +15,70 @@ for (let index = 0; index < states.length; index += 1) {
 const startDate = document.getElementById('start-date');
 const submitButton = document.getElementById('submit-resume');
 
-function checkDateContents() {
-  const dateElements = startDate.value.split('/');
+function checkCompletion() {
+  const requiredElements = document.querySelectorAll('[required]');
 
-  for (let index = 0; index < dateElements.length; index += 1) {
-    if (isNaN(dateElements[index])){
-      alert('Data inválida');
+  for (let index = 0; index < requiredElements.length; index += 1) {
+    if (requiredElements[index].value === "") {
+      alert('Favor preencher todos os campos');
+      return;
     }
   }
 }
 
-function checkDayRange() {
-  const dateElements = startDate.value.split('/');
-  const day = parseInt(dateElements[0]);
+// startDate.DatePickerX.init({ mondayFirst: false, format: 'dd/mm/yyyy' });
+startDate.id = 'datepicker';
+const picker = new Pikaday({
+  field: document.getElementById('datepicker'),
+  format: 'DD/MM/YYYY',
+});
 
-  if (!(day > 0 && day <= 31)) {
-    alert('Dia inválido');
-  }
-}
+// function checkDateContents(dateElements) {
+//   for (let index = 0; index < dateElements.length; index += 1) {
+//     if (isNaN(dateElements[index])){
+//       return true;
+//     }
+//   }
+//     return false;
+// }
 
-function checkMonthRange() {
-  const dateElements = startDate.value.split('/');
-  const month = parseInt(dateElements[1]);
+// function checkDateRange(dateElements) {
+//   const day = parseInt(dateElements[0]);
+//   const month = parseInt(dateElements[1]);
+//   const year = parseInt(dateElements[2]);
   
-  if(!(month > 0 && month <= 12)) {
-    alert('Mês inválido');
-  }
-}
-
-function checkYearRange() {
-  const dateElements = startDate.value.split('/');
-  const year = parseInt(dateElements[2]);
+//   if (!(day > 0 && day <= 31)) {
+//     alert('Dia inválido');
+//     return;
+//   }
   
-  if (!(year > 0)) {
-    alert('Ano inválido');
-  }
+//   if(!(month > 0 && month <= 12)) {
+//     alert('Mês inválido');
+//     return;
+//   }
+  
+//   if (!(year > 0)) {
+//     alert('Ano inválido');
+//     return;
+//   }
+// }
+
+// function validateDate() {
+//   const dateElements = startDate.value.split('/');
+
+//   if (checkDateContents(dateElements)) {
+//     alert('Data inválida');
+//   } else {
+//     checkDateRange(dateElements);
+//   }
+// }
+
+function generateResume(event) {
+  event.preventDefault();
+  checkCompletion();
+  // validateDate();
 }
 
-function validateDate() {
-  checkDateContents()
-  checkDayRange();
-  checkMonthRange();
-  checkYearRange();
-}
-
-submitButton.addEventListener('click', validateDate);
+submitButton.addEventListener('click', generateResume);
 
 
