@@ -26,7 +26,6 @@ function checkCompletion() {
   }
 }
 
-// startDate.DatePickerX.init({ mondayFirst: false, format: 'dd/mm/yyyy' });
 startDate.id = 'datepicker';
 const picker = new Pikaday({
   field: document.getElementById('datepicker'),
