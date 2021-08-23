@@ -12,19 +12,24 @@ for (let index = 0; index < states.length; index += 1) {
   stateSelector.appendChild(stateOption);
 }
 
+const fieldsToValidate = document.querySelectorAll('[required]');
+const form = document.querySelector('form');
+
+for (let index = 0; index < fieldsToValidate.length; index += 1) {
+  const field = fieldsToValidate[index];
+  field.removeAttribute('required');
+  field.classList.add('validate');
+  field.setAttribute('data-validate', 'required');
+}
+
+const emailInput = document.getElementById('email');
+
+emailInput.setAttribute('data-validate', 'required,email');
+console.log(emailInput.outerHTML);
+
 const startDate = document.getElementById('start-date');
 const submitButton = document.getElementById('submit-resume');
-
-function checkCompletion() {
-  const requiredElements = document.querySelectorAll('[required]');
-
-  for (let index = 0; index < requiredElements.length; index += 1) {
-    if (requiredElements[index].value === "") {
-      alert('Favor preencher todos os campos');
-      return;
-    }
-  }
-}
+const p = document.querySelector('p');
 
 startDate.id = 'datepicker';
 const picker = new Pikaday({
@@ -32,50 +37,10 @@ const picker = new Pikaday({
   format: 'DD/MM/YYYY',
 });
 
-// function checkDateContents(dateElements) {
-//   for (let index = 0; index < dateElements.length; index += 1) {
-//     if (isNaN(dateElements[index])){
-//       return true;
-//     }
-//   }
-//     return false;
-// }
-
-// function checkDateRange(dateElements) {
-//   const day = parseInt(dateElements[0]);
-//   const month = parseInt(dateElements[1]);
-//   const year = parseInt(dateElements[2]);
-  
-//   if (!(day > 0 && day <= 31)) {
-//     alert('Dia inválido');
-//     return;
-//   }
-  
-//   if(!(month > 0 && month <= 12)) {
-//     alert('Mês inválido');
-//     return;
-//   }
-  
-//   if (!(year > 0)) {
-//     alert('Ano inválido');
-//     return;
-//   }
-// }
-
-// function validateDate() {
-//   const dateElements = startDate.value.split('/');
-
-//   if (checkDateContents(dateElements)) {
-//     alert('Data inválida');
-//   } else {
-//     checkDateRange(dateElements);
-//   }
-// }
-
 function generateResume(event) {
-  event.preventDefault();
-  checkCompletion();
-  // validateDate();
+  validation.init(form);
+  validation.highlight(form);
+  // validation.show(p, 'Favor preencher todos os campos');
 }
 
 submitButton.addEventListener('click', generateResume);

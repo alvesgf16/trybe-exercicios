@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "moment": "^2.29.1",
-    "pikaday": "^1.8.2"
+    "pikaday": "^1.8.2",
+    "popup-validation": "^3.0.3"
   }
 }
