@@ -50,7 +50,7 @@ const orderModifier = (order) => {
 
   const newOrder = Object.assign({}, order, newInfo);
 
-  console.log(`Olá ${newOrder.name}, o total do seu pedido de ${Object.keys(order.order.pizza)} e ${order.order.drinks.coke.type} é R$${newOrder.payment.total},00`);
+  console.log(`Olá ${newOrder.name}, o total do seu pedido de ${Object.keys(order.order.pizza).join(', ')} e ${order.order.drinks.coke.type} é R$${newOrder.payment.total},00`);
 }
 
 orderModifier(order);
