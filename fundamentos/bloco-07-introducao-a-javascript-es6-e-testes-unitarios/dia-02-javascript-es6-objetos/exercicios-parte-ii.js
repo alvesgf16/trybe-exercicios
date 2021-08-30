@@ -52,3 +52,37 @@ function getValueByNumber(object, position) {
 function verifyPair(object, key, value) {
   return Object.keys(object).includes(key) && object[key] === value;
 }
+
+function getStudentTotalPerSubject(subject) {
+  const objectValues = Object.values(allLessons);
+  let studentTotal = 0;
+  objectValues.forEach(lesson => {
+    if (lesson.materia === subject) {
+      studentTotal += lesson.numeroEstudantes;
+    }
+  });
+  return studentTotal;
+}
+
+function createReport(object, teacher) {
+
+  const objectValues = Object.values(object);
+  const subjectList = [];
+  let studentTotal = 0;
+  objectValues.forEach(lesson => {
+    if (lesson.professor === teacher) {
+      subjectList.push(lesson.materia);
+      studentTotal += lesson.numeroEstudantes;
+    }
+  });
+
+  const report = {
+    professor: teacher,
+    aulas: subjectList,
+    estudantes: studentTotal
+  }
+
+  return report;
+}
+
+console.log(createReport(allLessons, 'Maria Clara'));
