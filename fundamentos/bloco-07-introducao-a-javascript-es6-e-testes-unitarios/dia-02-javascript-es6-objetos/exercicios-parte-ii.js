@@ -18,54 +18,43 @@ const lesson3 = {
   turno: 'noite',
 };
 
-function addKeyToObject(object, key, value) {
-  object[key] = value;
-}
+const addKeyToObject= (object, key, value) => object[key] = value;
 
-function listKeys(object) {
-  console.log(Object.keys(object).join(', '));
-}
+const listKeys = object => console.log(Object.keys(object));
 
-function displayObjectSize(object) {
-  console.log(Object.keys(object).length);
-}
+const displayObjectSize = object => console.log(Object.keys(object).length);
 
-function listValues(object) {
-  console.log(Object.values(object).join(', '));
-}
+const listValues = object => console.log(Object.values(object));
 
 addKeyToObject(lesson2, 'turno', 'noite');
-const allLessons = { lesson1: Object.assign({}, lesson1), lesson2: Object.assign({}, lesson2), lesson3: Object.assign({}, lesson3) };
 
-function getStudentTotal() {
-  const objectValues = Object.values(allLessons);
+const allLessons = Object.assign({}, { lesson1, lesson2, lesson3 });
+
+const getStudentTotal = object => {
+  const objectValues = Object.values(object);
   let studentTotal = 0;
   objectValues.forEach(lesson => studentTotal += lesson.numeroEstudantes);
   return studentTotal;
 }
 
-function getValueByNumber(object, position) {
-  const keyAt = Object.keys(object);
-  return object[keyAt[position]];
-}
+console.log(getStudentTotal(allLessons));
 
-function verifyPair(object, key, value) {
-  return Object.keys(object).includes(key) && object[key] === value;
-}
+const getValueByNumber = (object, number) => Object.values(object)[number];
 
-function getStudentTotalPerSubject(subject) {
-  const objectValues = Object.values(allLessons);
+const verifyPair = (object, key, value) => Object.keys(object).includes(key) && object[key] === value;
+
+const getStudentTotalPerSubject = object => {
+  const objectValues = Object.values(object);
   let studentTotal = 0;
   objectValues.forEach(lesson => {
-    if (lesson.materia === subject) {
+    if (lesson.materia === 'Matemática') {
       studentTotal += lesson.numeroEstudantes;
     }
   });
   return studentTotal;
 }
 
-function createReport(object, teacher) {
-
+const createReport = (object, teacher) => {
   const objectValues = Object.values(object);
   const subjectList = [];
   let studentTotal = 0;
@@ -85,4 +74,4 @@ function createReport(object, teacher) {
   return report;
 }
 
-console.log(createReport(allLessons, 'Maria Clara'));
+// console.log(createReport(allLessons, 'Maria Clara'));
