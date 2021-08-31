@@ -5,16 +5,17 @@ console.log(factorial(5));
 
 // 2. Crie uma função que receba uma frase e retorne qual a maior palavra.
 
-const longestWord = phrase => {
-  let longestWord = phrase.split(' ')[0]
-  for (let i = 0; i < phrase.split(' ').length; i += 1) {
-    if (phrase.split(' ')[i].length > longestWord.length) {
-      longestWord = phrase.split(' ')[i];
-    }
-  }
+const longestWord = phrase => phrase.split(' ').sort((wordA, wordB) => wordB.length - wordA.length)[0];
+//   const wordArray = phrase.split(' ');
+//   let longestWord = '';
+//   for (const word of wordArray) {
+//     if (word.length > longestWord.length) {
+//       longestWord = word;
+//     }
+//   }
 
-  return longestWord;
-}
+//   return longestWord;
+// }
 
 console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"))
 
@@ -27,10 +28,7 @@ console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu
 // let counter = document.querySelector('p');
 // counter.innerText = clickCount;
 
-// document.querySelector('button').addEventListener('click', () => {
-//   clickCount += 1;
-//   counter.innerText = clickCount;
-// });
+// document.querySelector('button').addEventListener('click', () => counter.innerText = clickCount += 1);
 
 // 4. Crie um código JavaScript com a seguinte especificação:
 // Não se esqueça de usar template literals
@@ -45,14 +43,14 @@ console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu
 // JavaScript;
 // HTML; ... #goTrybe".
 
+const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL'];
+
 const replaceXWith = string => {
   const originalString =  'Tryber x aqui!'
   const resultingString = originalString.replace('x', string);
 
   return resultingString;
 }
-
-const skills = ['HTML', 'CSS', 'JavaScript', 'Python', 'SQL'];
 
 const listSkills = string => `${string} Minhas cinco principais habilidades são ${skills.sort()} #goTrybe"`;
 
