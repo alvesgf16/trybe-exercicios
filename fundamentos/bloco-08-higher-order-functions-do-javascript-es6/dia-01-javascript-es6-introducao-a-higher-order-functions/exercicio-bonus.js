@@ -29,28 +29,38 @@ function getRandomIntInclusive(min, max) {
 
 const dragonAttack = () => getRandomIntInclusive(15, dragon.strength);
 const warriorAttack = () => getRandomIntInclusive(warrior.strength, warrior.weaponDmg * warrior.strength);
-const mageAttack = () => ({
-  damage: mage.mana >= 15 ? getRandomIntInclusive(mage.intelligence, mage.intelligence * 2) : 0,
-  manaConsumption: 15,
-});
+const mageAttack = () => {
+  const minDmg = mage.intelligence
+  const failedAttack = {
+    manaSpent: 0,
+    damage: 'Not enough mana...',
+  };
+
+  const sucessfulAttack = {
+    manaSpent: 15,
+    damage: getRandomIntInclusive(minDmg, minDmg * 2),
+  }
+  
+  return mage.mana >= 15 ? sucessfulAttack : failedAttack;
+}
 
 const gameActions = {
   warriorTurn: (warriorAttack) => {
-    warriorAttack = warriorAttack();
-    dragon.healthPoints -= warriorAttack;
-    warrior.damage = warriorAttack;
+    const warriorDamage = warriorAttack();
+    dragon.healthPoints -= warriorDamage;
+    warrior.damage = warriorDamage;
   },
   mageTurn: (mageAttack) => {
-    mageAttack = mageAttack()
-    dragon.healthPoints -= mageAttack.damage;
-    mage.damage = mageAttack.damage;
-    mage.mana -= mageAttack.manaConsumption;
+    const mageTurnStats = mageAttack()
+    dragon.healthPoints -= mageTurnStats.damage;
+    mage.damage = mageTurnStats.damage;
+    mage.mana -= mageTurnStats.manaSpent;
   },
   dragonTurn: (dragonAttack) => {
-    dragonAttack = dragonAttack();
-    mage.healthPoints -= dragonAttack;
-    warrior.healthPoints -= dragonAttack;
-    dragon.damage = dragonAttack;
+    const dragonDamage = dragonAttack();
+    mage.healthPoints -= dragonDamage;
+    warrior.healthPoints -= dragonDamage;
+    dragon.damage = dragonDamage;
   },
   updateStats: function() {
     this.warriorTurn(warriorAttack);
@@ -60,4 +70,4 @@ const gameActions = {
   }
 };
 
-console.log(gameActions.updateStats());
+console.table(gameActions.updateStats());
