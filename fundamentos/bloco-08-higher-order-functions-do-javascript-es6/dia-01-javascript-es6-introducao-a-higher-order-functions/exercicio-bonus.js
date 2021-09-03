@@ -32,4 +32,32 @@ const warriorAttack = () => getRandomIntInclusive(warrior.strength, warrior.weap
 const mageAttack = () => ({
   damage: mage.mana >= 15 ? getRandomIntInclusive(mage.intelligence, mage.intelligence * 2) : 0,
   manaConsumption: 15,
-  });
+});
+
+const gameActions = {
+  warriorTurn: (warriorAttack) => {
+    warriorAttack = warriorAttack();
+    dragon.healthPoints -= warriorAttack;
+    warrior.damage = warriorAttack;
+  },
+  mageTurn: (mageAttack) => {
+    mageAttack = mageAttack()
+    dragon.healthPoints -= mageAttack.damage;
+    mage.damage = mageAttack.damage;
+    mage.mana -= mageAttack.manaConsumption;
+  },
+  dragonTurn: (dragonAttack) => {
+    dragonAttack = dragonAttack();
+    mage.healthPoints -= dragonAttack;
+    warrior.healthPoints -= dragonAttack;
+    dragon.damage = dragonAttack;
+  },
+  updateStats: function() {
+    this.warriorTurn(warriorAttack);
+    this.mageTurn(mageAttack);
+    this.dragonTurn(dragonAttack);
+    return battleMembers;
+  }
+};
+
+console.log(gameActions.updateStats());
