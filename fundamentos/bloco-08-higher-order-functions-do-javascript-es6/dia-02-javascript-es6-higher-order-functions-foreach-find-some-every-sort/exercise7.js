@@ -63,4 +63,23 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+const expectedResult = false;
+
+function authorUnique() {
+  let authorUnique = true;
+
+  books.forEach(bookA => {
+    books.forEach(bookB => {
+      if (bookA !== bookB) {
+        if (bookA.author.birthYear === bookB.author.birthYear) {
+          authorUnique = false;
+        }
+      }
+
+    });
+  })
+
+  return authorUnique;
+}
+
+assert.strictEqual(authorUnique(), expectedResult);
