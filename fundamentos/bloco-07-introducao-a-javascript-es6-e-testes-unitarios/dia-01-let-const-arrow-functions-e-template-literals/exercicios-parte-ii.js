@@ -19,17 +19,6 @@ const longestWord = phrase => phrase.split(' ').sort((wordA, wordB) => wordB.len
 
 console.log(longestWord("Antônio foi no banheiro e não sabemos o que aconteceu"))
 
-// 3. Crie uma página que contenha:
-// Um botão ao qual será associado um event listener ;
-// Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
-// Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada.
-
-// let clickCount = 0;
-// let counter = document.querySelector('p');
-// counter.innerText = clickCount;
-
-// document.querySelector('button').addEventListener('click', () => counter.innerText = clickCount += 1);
-
 // 4. Crie um código JavaScript com a seguinte especificação:
 // Não se esqueça de usar template literals
 // Função 1 : Escreva uma função que vai receber uma string como parâmetro. Sua função deverá procurar pela letra x em uma string qualquer que você determinar e substituir pela string que você passou como parâmetro. Sua função deve retornar essa nova string .
