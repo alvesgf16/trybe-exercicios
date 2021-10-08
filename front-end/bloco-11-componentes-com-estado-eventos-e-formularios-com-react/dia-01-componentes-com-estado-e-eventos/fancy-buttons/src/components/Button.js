@@ -14,23 +14,20 @@ export default class Button extends React.Component {
   }
   
   countClicks() {
-    this.setState((previousState, _props) => {
-      const counter = { clicks: previousState.clicks + 1 };
-      return counter;
-    });
+    this.setState((prevState, _props) => ({ clicks: prevState.clicks + 1 }));
   }
   
   paintBackground() {
-    this.setState((previousState, _props) => {
-      previousState.backgroundColor = previousState.clicks % 2 === 0 ? 'green' : 'white';
+    this.setState((prevState, _props) => {
+      prevState.backgroundColor = prevState.clicks % 2 === 0 ? 'green' : 'white';
     })
   }
   
   handleClick = () => {
     this.countClicks();
     this.paintBackground();
-    this.setState((previousState, _props) => {
-      console.log(previousState.backgroundColor);
+    this.setState((prevState, _props) => {
+      console.log(prevState.backgroundColor);
     })
   }
 
