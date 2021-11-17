@@ -1,8 +1,6 @@
 const names = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
 
-const hasName = (arr, name) => {
-  return arr.some((element) => element === name);
-}
+const hasName = (arr, name) => arr.some((element) => element === name);
 
 console.log(hasName(names, 'Ana'));
 
@@ -14,8 +12,6 @@ const people = [
   { name: 'Bruna', age: 19 },
 ];
 
-const verifyAges = (arr, minimumAge) => {
-  return arr.every((element) => element.age >= minimumAge);
-}
+const verifyAges = (arr, minimumAge) => arr.every((element) => element.age >= minimumAge);
 
 console.log(verifyAges(people, 18));
