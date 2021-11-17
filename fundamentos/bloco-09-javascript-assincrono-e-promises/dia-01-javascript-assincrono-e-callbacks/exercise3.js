@@ -1,13 +1,13 @@
 const getPlanet = () => {
   const mars = {
-    name: "Mars",
+    name: 'Mars',
     distanceFromSun: {
       value: 227900000,
-      measurementUnit: "kilometers",
+      measurementUnit: 'kilometers',
     },
   };
   setTimeout(() => {
-    console.log("Returned planet: ", mars);
+    console.log('Returned planet: ', mars);
   }, 4000);
 };
 

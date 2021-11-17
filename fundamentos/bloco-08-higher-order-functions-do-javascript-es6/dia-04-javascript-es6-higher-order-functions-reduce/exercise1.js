@@ -8,8 +8,8 @@ const arrays = [
 
 function flatten() {
   return arrays.reduce((accumulator, element) => {
-    element.forEach(innerElement => {
-      accumulator.push(innerElement)
+    element.forEach((innerElement) => {
+      accumulator.push(innerElement);
     });
     return accumulator;
   }, []);

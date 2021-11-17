@@ -7,7 +7,8 @@ const names = [
 ];
 
 function containsA() {
-  return names.reduce((acc, name) => `${acc}${name}`).split('').filter((char) => char === 'a' || char === 'A').length;
+  return names.reduce((acc, name) => `${acc}${name}`).split('')
+    .filter((char) => char === 'a' || char === 'A').length;
 }
 
 assert.deepStrictEqual(containsA(), 20);

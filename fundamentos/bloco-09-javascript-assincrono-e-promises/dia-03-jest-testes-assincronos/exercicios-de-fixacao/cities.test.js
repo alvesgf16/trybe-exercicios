@@ -29,9 +29,7 @@ describe('Retrieving cities from cache', () => {
 describe('Requesting cities from api', () => {
   beforeEach(() => requestCities());
 
-  afterEach(() => {
-    resetCities();
-  });
+  afterEach(() => resetCities());
 
   it('should have 8 cities after requesting from api', () => {
     const cities = getCities();

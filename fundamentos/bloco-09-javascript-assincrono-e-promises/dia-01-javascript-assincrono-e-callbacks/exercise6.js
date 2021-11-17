@@ -3,9 +3,9 @@ const messageDelay = () => Math.floor(Math.random() * 5000);
 const getMarsTemperature = () => {
   const maxTemperature = 58;
   return Math.floor(Math.random() * maxTemperature);
-}
+};
 
-const toFahrenheit = (degreeCelsius) => (degreeCelsius * 9/5) + 32;
+const toFahrenheit = (degreeCelsius) => ((degreeCelsius * 9) / 5) + 32;
 
 const temperatureInFahrenheit = (temperature) =>
   console.log(`It is currently ${toFahrenheit(temperature)}ºF at Mars`);
@@ -26,7 +26,7 @@ const sendMarsTemperature = (onSuccess, onFailure) => {
       onFailure('Robot is busy');
     }
   }, messageDelay());
-} 
+};
 
 // imprime "It is currently 47ºF at Mars", por exemplo, ou "Error getting temperature: Robot is busy"
 sendMarsTemperature(temperatureInFahrenheit, handleError);
