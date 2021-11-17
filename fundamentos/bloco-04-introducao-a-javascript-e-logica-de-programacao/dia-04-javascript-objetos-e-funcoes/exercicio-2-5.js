@@ -7,13 +7,9 @@ function getMostRepeatedInt(array) {
   let mostRepeatedInt;
   let timesMostRepeated = 0;
 
-  for (let number = 0; number < array.length; number += 1) {
-    if (timesRepeated[array[number]]) {
-      timesRepeated[array[number]] += 1;
-    } else {
-      timesRepeated[array[number]] = 1;
-    }
-  }
+  array.forEach((number) => {
+    timesRepeated[number] = timesRepeated[number] ? timesRepeated[number] + 1 : 1;
+  });
 
   for (const number in timesRepeated) {
     if (timesRepeated[number] > timesMostRepeated) {

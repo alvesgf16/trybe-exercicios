@@ -1,18 +1,18 @@
 const convertPercentageToLetterGrade = (percentage) => {
-  if (percentage < 0 || percentage > 100) {
-    return 'Não é uma nota válida';
-  } if (percentage >= 90) {
-    return 'A';
-  } if (percentage >= 80) {
-    return 'B';
-  } if (percentage >= 70) {
-    return 'C';
-  } if (percentage >= 60) {
-    return 'D';
-  } if (percentage >= 50) {
-    return 'E';
-  } 
-    return 'F';
-}
+  const letterGradeConverter = {
+    100: 'A',
+    90: 'A',
+    80: 'B',
+    70: 'C',
+    60: 'D',
+    50: 'E',
+    0: 'F',
+  };
 
-console.log(convertPercentageToLetterGrade(90));
+  const percentageRange = percentage < 50 ? 0 : Math.floor(percentage / 10) * 10;
+
+  return (percentage < 0 || percentage > 100
+    ? 'Não é uma nota válida' : letterGradeConverter[percentageRange]);
+};
+
+console.log(convertPercentageToLetterGrade(100));
