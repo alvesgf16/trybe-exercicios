@@ -1,19 +1,19 @@
-let n = 7;
-let numerosAnteriores = [];
-quantidadeDeDivisiveis = 0;
+const n = 7;
+const numerosAnteriores = [];
+let quantidadeDeDivisiveis = 0;
 
-for (numero = 1; numero <= n; numero += 1) {
-    numerosAnteriores.push(numero);
+for (let numero = 1; numero <= n; numero += 1) {
+  numerosAnteriores.push(numero);
 }
 
-for (posicao = 0; posicao < numerosAnteriores.length; posicao += 1) {
-    if (n % numerosAnteriores[posicao] === 0) {
-        quantidadeDeDivisiveis += 1;
-    }
+for (let posicao = 0; posicao < numerosAnteriores.length; posicao += 1) {
+  if (n % numerosAnteriores[posicao] === 0) {
+    quantidadeDeDivisiveis += 1;
+  }
 }
 
 if (quantidadeDeDivisiveis > 2) {
-    console.log("Não é primo")
+  console.log('Não é primo');
 } else {
-    console.log("É primo")
+  console.log('É primo');
 }

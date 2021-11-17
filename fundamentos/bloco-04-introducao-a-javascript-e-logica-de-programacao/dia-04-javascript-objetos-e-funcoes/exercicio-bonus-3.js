@@ -2,29 +2,29 @@
 // Em seguida, imprima esse resultado na tela com uma mensagem no seguinte formato: Sua cesta possui: x Melancias, x Abacates...
 
 const basket = [
-    'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
-    'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
-    'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
-    'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
-    'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
-    'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
-    'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
-    'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
-    'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
-    'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
-    'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
-    'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
-    'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
-    'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
-    'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
-    'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
-    'Banana', 'Pera', 'Abacate', 'Uva',
-  ];
+  'Melancia', 'Abacate', 'Melancia', 'Melancia', 'Uva', 'Laranja',
+  'Jaca', 'Pera', 'Melancia', 'Uva', 'Laranja', 'Melancia',
+  'Banana', 'Uva', 'Pera', 'Abacate', 'Laranja', 'Abacate',
+  'Banana', 'Melancia', 'Laranja', 'Laranja', 'Jaca', 'Uva',
+  'Banana', 'Uva', 'Laranja', 'Pera', 'Melancia', 'Uva',
+  'Jaca', 'Banana', 'Pera', 'Abacate', 'Melancia', 'Melancia',
+  'Laranja', 'Pera', 'Banana', 'Jaca', 'Laranja', 'Melancia',
+  'Abacate', 'Abacate', 'Pera', 'Melancia', 'Banana', 'Banana',
+  'Abacate', 'Uva', 'Laranja', 'Banana', 'Abacate', 'Uva',
+  'Uva', 'Abacate', 'Abacate', 'Melancia', 'Uva', 'Jaca',
+  'Uva', 'Banana', 'Abacate', 'Banana', 'Uva', 'Banana',
+  'Laranja', 'Laranja', 'Jaca', 'Jaca', 'Abacate', 'Jaca',
+  'Laranja', 'Melancia', 'Pera', 'Jaca', 'Melancia', 'Uva',
+  'Abacate', 'Jaca', 'Jaca', 'Abacate', 'Uva', 'Laranja',
+  'Pera', 'Melancia', 'Jaca', 'Pera', 'Laranja', 'Jaca',
+  'Pera', 'Melancia', 'Jaca', 'Banana', 'Laranja', 'Jaca',
+  'Banana', 'Pera', 'Abacate', 'Uva',
+];
 
-let howManyOfEach = {};
-let mensagem = "Sua cesta possui: "
+const howManyOfEach = {};
+let mensagem = 'Sua cesta possui: ';
 
-for (index = 0; index < basket.length; index += 1) {
+for (let index = 0; index < basket.length; index += 1) {
   if (howManyOfEach[basket[index]]) {
     howManyOfEach[basket[index]] += 1;
   } else {
@@ -32,10 +32,12 @@ for (index = 0; index < basket.length; index += 1) {
   }
 }
 
-for (fruit in howManyOfEach) {
-    mensagem += howManyOfEach[fruit] + " " + fruit + "s, "
+for (const fruit in howManyOfEach) {
+  if ({}.hasOwnProperty.call(howManyOfEach, fruit)) {
+    mensagem += `${howManyOfEach[fruit]} ${fruit}s, `;
+  }
 }
 
-mensagem -= ", ";
+mensagem -= ', ';
 
 console.log(mensagem);

@@ -3,17 +3,17 @@
 // Valor esperado no retorno da função: Fernanda .
 
 function returnLongestName(array) {
-    let longestNameLength = array[0].split("").length;
-    let longestName = array[0];
+  let longestNameLength = array[0].split('').length;
+  let longestName = array[0];
 
-    for (let person of array) {
-        if (person.split("").length > longestNameLength) {
-            longestNameLength = person.split("").length;
-            longestName = person;
-        }
+  for (const person of array) {
+    if (person.split('').length > longestNameLength) {
+      longestNameLength = person.split('').length;
+      longestName = person;
     }
+  }
     
-    return console.log(longestName);
+  return console.log(longestName);
 }
 
 returnLongestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);

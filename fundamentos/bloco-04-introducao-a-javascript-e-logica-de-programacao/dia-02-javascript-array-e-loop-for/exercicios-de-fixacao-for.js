@@ -9,9 +9,9 @@
 //     console.log(cars[index]);
 // }
 
-//Exercício de fixação
-let groceryList = ['Arroz','Feijão','Alface','Melancia'];
+// Exercício de fixação
+const groceryList = ['Arroz', 'Feijão', 'Alface', 'Melancia'];
 
-for (index = 0; index < groceryList.length; index += 1) {
-    console.log(groceryList[index]);
+for (let index = 0; index < groceryList.length; index += 1) {
+  console.log(groceryList[index]);
 }

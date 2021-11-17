@@ -6,12 +6,8 @@
 // Retorno esperado: false
 
 function verificaPalindrome(word) {
-    let reversedWord = word.split("").reverse().join("");
-    if (reversedWord === word) {
-        return console.log(true);
-    } else {
-        return console.log(false);
-    }
+  const reversedWord = word.split('').reverse().join('');
+  console.log(reversedWord === word);
 }
 
 verificaPalindrome('arara');

@@ -1,36 +1,36 @@
-let n = 9;
-let numeroDeAsteriscosNoTopo = 1;
-let numeroDeAsteriscosNaLinha = 1;
-let numeroDeEspaçosNoMeio = 1;
+const n = 9;
+const numberOfAsterisksOnTop = 1;
+let numberOfAsterisksInLine = 1;
+let numberOfSpacesInTheMiddle = 1;
 
-for (i = 1; i <= n; i += 2) {
-    let str = "";
+for (let i = 1; i <= n; i += 2) {
+  let str = '';
 
-    if (i === numeroDeAsteriscosNoTopo || i === n) {
-        for (espaçosEmBranco = 1; espaçosEmBranco <= (n - numeroDeAsteriscosNaLinha)/2; espaçosEmBranco += 1) {
-            str += " ";
-        }
-
-        for (asteriscos = 1; asteriscos <= numeroDeAsteriscosNaLinha; asteriscos += 1) {
-            str += "*";
-        }
-
-        console.log(str);
-    } else {
-        for (espaçosEmBranco = 1; espaçosEmBranco <= (n - numeroDeAsteriscosNaLinha)/2; espaçosEmBranco += 1) {
-            str += " ";
-        }
-
-        str += "*"
-        
-        for (espaçosEmBranco = 1; espaçosEmBranco <= numeroDeEspaçosNoMeio; espaçosEmBranco +=1) {
-            str += " ";
-        }
-
-        str += "*";
-
-        console.log(str);
-        numeroDeEspaçosNoMeio += 2;
+  if (i === numberOfAsterisksOnTop || i === n) {
+    for (let blankSpaces = 1; blankSpaces <= (n - numberOfAsterisksInLine) / 2; blankSpaces += 1) {
+      str += ' ';
     }
-    numeroDeAsteriscosNaLinha += 2;
+
+    for (let asterisks = 1; asterisks <= numberOfAsterisksInLine; asterisks += 1) {
+      str += '*';
+    }
+
+    console.log(str);
+  } else {
+    for (let blankSpaces = 1; blankSpaces <= (n - numberOfAsterisksInLine) / 2; blankSpaces += 1) {
+      str += ' ';
+    }
+
+    str += '*';
+    
+    for (let blankSpaces = 1; blankSpaces <= numberOfSpacesInTheMiddle; blankSpaces += 1) {
+      str += ' ';
+    }
+
+    str += '*';
+
+    console.log(str);
+    numberOfSpacesInTheMiddle += 2;
+  }
+  numberOfAsterisksInLine += 2;
 }

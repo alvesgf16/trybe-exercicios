@@ -1,4 +1,4 @@
-//Revisão do assunto
+// Revisão do assunto
 // let numeros = [1,2,3,4,5];
 // for(let numero of numeros) {
 //   console.log(numero);
@@ -17,9 +17,9 @@
 
 // console.log(arrOfNumbers);
 
-//Exercício de fixação
-let names = ['João','Maria','Antônio','Margarida'];
+// Exercício de fixação
+const names = ['João', 'Maria', 'Antônio', 'Margarida'];
 
-for(let name of names) {
-    console.log(name);
+for (const name of names) {
+  console.log(name);
 }

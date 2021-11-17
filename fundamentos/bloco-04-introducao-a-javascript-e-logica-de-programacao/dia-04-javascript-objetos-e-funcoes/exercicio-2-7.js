@@ -7,17 +7,17 @@
 // Retorno esperado: false
 
 function verificaFimPalavra(word, ending) {
-    let wordArray = word.split("");
-    let endingArray = ending.split("");
-    let isEnding = true;
+  const wordArray = word.split('');
+  const endingArray = ending.split('');
+  let isEnding = true;
 
-    for (index = 0; index < endingArray.length; index += 1) {
-        if (wordArray[index + wordArray.length - endingArray.length] != endingArray[index]) {
-            isEnding = false
-        }
+  for (let index = 0; index < endingArray.length; index += 1) {
+    if (wordArray[index + wordArray.length - endingArray.length] !== endingArray[index]) {
+      isEnding = false;
     }
+  }
 
-    return console.log(isEnding);
+  return console.log(isEnding);
 }
 
-verificaFimPalavra("joaofernando", "nando");
+verificaFimPalavra('joaofernando', 'nando');

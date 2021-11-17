@@ -24,18 +24,10 @@
 // 14
 
 function converteNumeroRomanos(numeroRomano) {
-  let numerosRomanos = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000,
-  };
+  const numerosRomanos = { I: 1, V: 5, X: 10, L: 50, C: 100, D: 500, M: 1000 };
 
-  let arrayNumerosRomanos = numeroRomano.split("");
-  let arrayNumeroIndoArabico = [];
+  const arrayNumerosRomanos = numeroRomano.split('');
+  const arrayNumeroIndoArabico = [];
   let algarismoRomano;
   let numeroFinal = 0;
 
@@ -45,15 +37,14 @@ function converteNumeroRomanos(numeroRomano) {
   }
 
   for (let index = 0; index < arrayNumeroIndoArabico.length; index += 1) {
-    if (arrayNumeroIndoArabico[index] < arrayNumeroIndoArabico[index+1]) {
+    if (arrayNumeroIndoArabico[index] < arrayNumeroIndoArabico[index + 1]) {
       numeroFinal -= arrayNumeroIndoArabico[index];
     } else {
       numeroFinal += arrayNumeroIndoArabico[index];
     }
-    
   }
 
   return console.log(numeroFinal);
 }
 
-converteNumeroRomanos("LIV");
+converteNumeroRomanos('LIV');

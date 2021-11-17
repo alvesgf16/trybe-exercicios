@@ -1,19 +1,23 @@
-let names = {
-    person1: 'João',
-    person2: 'Maria',
-    person3: 'Jorge' 
-  };
+const names = {
+  person1: 'João',
+  person2: 'Maria',
+  person3: 'Jorge', 
+};
 
-  for (let person in names) {
-      console.log('Olá ' + names[person]);
+for (const person in names) {
+  if ({}.hasOwnProperty.call(names, person)) {
+    console.log(`Olá ${names[person]}`);
   }
+}
 
-  let car = {
-    model: 'A3 Sedan',
-    manufacturer: 'Audi',
-    year: 2020
-  };
+const car = {
+  model: 'A3 Sedan',
+  manufacturer: 'Audi',
+  year: 2020,
+};
   
-  for (let feature in car) {
-      console.log(feature + ': ' + car[feature]);
+for (const feature in car) {
+  if ({}.hasOwnProperty.call(car, feature)) {
+    console.log(`${feature}: ${car[feature]}`);
   }
+}
