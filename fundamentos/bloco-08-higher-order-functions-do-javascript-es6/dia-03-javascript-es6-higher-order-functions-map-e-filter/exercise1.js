@@ -1,5 +1,5 @@
 const assert = require('assert');
-const books = require('./data');
+const books = require('../data');
 
 const expectedResult = [
   'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',

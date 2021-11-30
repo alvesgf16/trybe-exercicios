@@ -1,5 +1,5 @@
 const assert = require('assert');
-const books = require('./data');
+const books = require('../data');
 
 const expectedResult = 'George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert,'
 + ' Stephen King, H. P. Lovecraft.';

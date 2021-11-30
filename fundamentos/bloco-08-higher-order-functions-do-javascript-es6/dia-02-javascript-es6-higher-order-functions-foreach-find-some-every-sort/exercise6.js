@@ -1,5 +1,5 @@
 const assert = require('assert');
-const books = require('./data');
+const books = require('../data');
 
 const expectedResult = true;
 
