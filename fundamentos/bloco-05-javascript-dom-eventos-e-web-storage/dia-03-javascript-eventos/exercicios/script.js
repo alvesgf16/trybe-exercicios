@@ -116,16 +116,16 @@ Adicione este botão como filho/filha da tag <div> com classe "buttons-container
 */
 const buttonsContainer = document.querySelector('.buttons-container');
 
-function createHolidayButton(holidayStr) {
-  const holidayButton = document.createElement('button');
-  holidayButton.innerText = holidayStr;
-  holidayButton.id = 'btn-holiday';
-  buttonsContainer.appendChild(holidayButton);
+function createButton(str, id, onClick) {
+  const button = document.createElement('button');
+  button.innerText = str;
+  button.id = id;
+  buttonsContainer.appendChild(button);
 
-  holidayButton.addEventListener('click', toggleHolidays);
+  button.addEventListener('click', onClick);
 }
 
-createHolidayButton('Feriados');
+createButton('Feriados', 'btn-holiday', toggleHolidays);
 
 /*
 Exercício 5:
@@ -154,16 +154,7 @@ Implemente uma função que receba como parâmetro a string "Sexta-feira" e crie
 Adicione a este botão o ID "btn-friday" .
 Adicione este botão como filho/filha da tag <div> com classe "buttons-container" .
 */
-function createFridayButton(fridayStr) {
-  const fridayButton = document.createElement('button');
-  fridayButton.innerText = fridayStr;
-  fridayButton.id = 'btn-friday';
-  buttonsContainer.appendChild(fridayButton);
-
-  fridayButton.addEventListener('click', toggleFridays);
-}
-
-createFridayButton('Sexta-feira');
+createButton('Sexta-feira', 'btn-friday', toggleFridays);
 
 /*
 Exercício 7:
