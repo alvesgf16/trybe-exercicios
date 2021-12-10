@@ -1,23 +1,29 @@
-function encode(string) {
-  let encodedString = string.replace(/a/g, '1')
-    .replace(/e/g, '2')
-    .replace(/i/g, '3')
-    .replace(/o/g, '4')
-    .replace(/u/g, '5');
+const encoder = {
+  a: '1',
+  e: '2',
+  i: '3',
+  o: '4',
+  u: '5',
+};
 
-  return encodedString;
-}
+const encodeCharacter = (character) => (
+  Object.keys(encoder).some((key) => key === character)
+    ? encoder[character] : character
+);
 
-function decode(string) {
-  let decodedString = string.replace(/1/g, 'a')
-    .replace(/2/g, 'e')
-    .replace(/3/g, 'i')
-    .replace(/4/g, 'o')
-    .replace(/5/g, 'u');
+const encode = (string) => string.split('')
+  .map((character) => encodeCharacter(character)).join('');
 
-  return decodedString;
-}
+const decodeCharacter = (character) => (
+  Object.values(encoder).some((value) => value === character)
+    ? Object.keys(encoder).find((key) => encoder[key] === character) : character
+);
 
+const decode = (string) => string.split('')
+  .map((character) => decodeCharacter(character)).join('');
+
+console.log(decode('H4w 1r2 y45 t4d1y?'));
+  
 module.exports = {
   decode,
   encode,
