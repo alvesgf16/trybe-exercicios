@@ -1,3 +1,4 @@
+const Joi = require('joi');
 const Author = require('../models/Author');
 
 // Cria uma string com o nome completo do autor
@@ -9,14 +10,6 @@ const getNewAuthor = ({id, firstName, middleName, lastName}) => {
     .join(' ');
 
   return { id, firstName, middleName, lastName, fullName };
-};
-
-const isValid = (firstName, middleName, lastName) => {
-  if (!firstName || typeof firstName !== 'string') return false;
-  if (!lastName || typeof lastName !== 'string') return false;
-  if (middleName && typeof middleName !== 'string') return false;
-
-  return true;
 };
 
 const getAll = async () => {
@@ -38,10 +31,6 @@ const findById = async (id) => {
 };
 
 const create = async (firstName, middleName, lastName) => {
-  const validAuthor = isValid(firstName, middleName, lastName);
-
-  if (!validAuthor) return false;
-
   const existingAuthor = await Author.findByName(firstName, middleName, lastName);
 
   if (existingAuthor) return { error: {

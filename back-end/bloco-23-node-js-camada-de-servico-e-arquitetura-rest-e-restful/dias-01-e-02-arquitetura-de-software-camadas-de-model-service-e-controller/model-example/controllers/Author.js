@@ -28,6 +28,7 @@ const create = () => async (req, res, next) => {
   const { error } = Joi.object({
     // Deve ser uma string (.string()) não vazia (.not().empty()) e é obrigatório (.required())
     firstName: Joi.string().not().empty().required(),
+    middleName: Joi.string(),
     // Deve ser uma string não vazia e é obrigatório
     lastName: Joi.string().not().empty().required(),
   })
