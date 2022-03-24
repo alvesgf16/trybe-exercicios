@@ -1,6 +1,9 @@
 "use strict";
-const rl = require('readline-sync');
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const readline_sync_1 = __importDefault(require("readline-sync"));
 const options = ['length', 'mass', 'capacity', 'area', 'volume'];
-const scriptInput = rl.keyInSelect(options, 'Qual conversão você deseja realizar?');
-const result = require(`./${options[scriptInput]}.js`);
-console.log(result.exec());
+const script = readline_sync_1.default.keyInSelect(options, 'Qual conversão você deseja realizar?');
+require(`./${options[script]}`);
