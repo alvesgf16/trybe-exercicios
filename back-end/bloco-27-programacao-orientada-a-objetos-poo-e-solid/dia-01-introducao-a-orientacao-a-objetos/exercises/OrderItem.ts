@@ -1,13 +1,17 @@
-export default class OrderItems {
+export default class OrderItem {
   private _name: string;
 
-  private _cost: number;
+  private _price: number;
 
   constructor(
     n: string,
-    c: number,
+    p: number,
   ) {
     this._name = n;
-    this._cost = c;
+    this._price = p;
+  }
+
+  get price() {
+    return this._price;
   }
 }
