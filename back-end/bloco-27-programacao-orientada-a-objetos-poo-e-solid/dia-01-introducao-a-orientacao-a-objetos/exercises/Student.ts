@@ -18,4 +18,13 @@ export default class Student {
     this._testGrades = tG;
     this._projectGrades = pG;
   }
+
+  totalGrade() {
+    return this._testGrades.reduce((acc, cur) => acc + cur)
+         + this._projectGrades.reduce((acc, cur) => acc + cur);
+  }
+
+  averageGrade() {
+    return this.totalGrade() / (this._testGrades.length + this._projectGrades.length);
+  }
 }
