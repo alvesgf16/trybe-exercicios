@@ -1,0 +1,4 @@
+use("business");
+
+db.restaurants.find({ rating: { $not: { $lte: 5 } } });
+db.restaurants.countDocuments({ rating: { $not: { $lte: 5 } } });

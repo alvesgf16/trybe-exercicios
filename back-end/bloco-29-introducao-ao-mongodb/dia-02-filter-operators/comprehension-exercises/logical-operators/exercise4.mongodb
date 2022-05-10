@@ -1,0 +1,4 @@
+use("business");
+
+db.restaurants.find({ $nor: [{ rating: 1 }, { cuisine: "American" }] });
+db.restaurants.countDocuments({ $nor: [{ rating: 1 }, { cuisine: "American" }] });

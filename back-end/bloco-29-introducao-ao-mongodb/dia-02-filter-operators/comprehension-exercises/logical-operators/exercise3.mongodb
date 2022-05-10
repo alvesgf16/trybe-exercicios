@@ -1,0 +1,10 @@
+use("business");
+
+db.restaurants.find({ $and: [
+  { rating: { $gte: 4 } },
+  { borough: { $in: ["Queens", "Staten Island", "Brooklyn"] } },
+] });
+db.restaurants.countDocuments({ $and: [
+  { rating: { $gte: 4 } },
+  { borough: { $in: ["Queens", "Staten Island", "Brooklyn"] } },
+] });
