@@ -1,4 +1,4 @@
 use("business");
 
 db.restaurants.find({ cuisine: { $ne: "American" } });
-db.restaurants.countDocuments({ borough: { $ne: "American" } });
+db.restaurants.countDocuments({ cuisine: { $ne: "American" } });
