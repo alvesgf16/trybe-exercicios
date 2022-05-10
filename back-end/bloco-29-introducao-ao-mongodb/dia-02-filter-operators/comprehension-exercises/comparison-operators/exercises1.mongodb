@@ -1,0 +1,4 @@
+use("business");
+
+db.restaurants.find({ borough: { $in: ["Queens", "Staten Island", "Bronx"] } });
+db.restaurants.countDocuments({ borough: { $in: ["Queens", "Staten Island", "Bronx"] } });
