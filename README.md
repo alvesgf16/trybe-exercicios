@@ -6,82 +6,251 @@ _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vi
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
+## Fundamentos do Desenvolvimento Web :heavy_check_mark:
 
-##### Bloco 1: Unix & Bash
+##### Bloco 1: [Unix, Bash e Shell Script](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-01-unix-bash-e-shell-script)
+- [x] 1.3 - Fundamentos do Desenvolvimento Web
+- [x] 1.3 - Introdução - Unix & Shell
+- [x] 1.3 - Unix & Bash - Parte 1
+- [x] 1.4 - Unix & Bash - Parte 2
 
-- [X] 1-3: _Unix & Bash- Parte 1_
-- [X] 1-4: _Unix & Bash- Parte 2_
+##### Bloco 2: [Git, GitHub e Internet](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-02-git-github-e-internet)
+- [x] 2.1 - Git & GitHub  - O que é e para que serve
+- [x] 2.2 - Git & GitHub - Entendendo os comandos
+- [x] 2.3 - Internet - Entendendo como ela funciona
 
-##### Bloco 2: Git, GitHub e Internet
+##### Bloco 3: [Introdução à HTML e CSS](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-03-introducao-a-html-e-css)
+- [x] 3.1 - Introdução - HTML & CSS
+- [x] 3.1 - HTML & CSS - Estruturas de página
+- [x] 3.2 - HTML & CSS - Primeiros passos em CSS
+- [x] 3.3 - HTML & CSS - Seletores e posicionamento
+- [x] 3.4 - HTML Semântico
+- [x] 3.5 - Projeto - Lessons Learned
 
-- [X] 2-1: _Git & GitHub - O que é e para que serve?_
-- [X] 2-2: _Git & GitHub - Entendendo os comandos_
-- [X] 2-3: _Internet - Entendendo como ela funciona_
+##### Bloco 4: [Introdução à JavaScript e Lógica de Programação](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-04-introducao-a-javascript-e-logica-de-programacao)
+- [x] 4.1 - Introdução - JavaScript
+- [x] 4.1 - JavaScript - Primeiros passos
+- [x] 4.2 - JavaScript - Array e loop For
+- [x] 4.3 - JavaScript - Lógica de Programação e Algoritmos
+- [x] 4.4 - JavaScript - Objetos e funções
+- [x] 4.5 - Projeto - Playground Functions
 
-##### Bloco 3: Introdução à HTML & CSS
+##### Bloco 5: [JavaScript: DOM, Eventos e Web Storage](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-05-javascript-dom-eventos-e-web-storage)
+- [x] 5.1 - JavaScript - DOM e seletores
+- [x] 5.2 - JavaScript - Trabalhando com elementos
+- [x] 5.3 - JavaScript - Eventos
+- [x] 5.4 - JavaScript - Web Storage
+- [x] 5.5 - Fundamentos - JavaScript - Projetos
+- [x] 5.5 - Projeto - Arte com Pixels
+- [x] 5.6 - Projeto - Lista de tarefas
+- [ ] 5.7 - (Bônus) Projeto - Meme Generator
+- [ ] 5.7 - (Bônus) Projeto - Adivinhe a Cor
+- [ ] 5.7 - (Bônus) Projeto - Carta Misteriosa
 
-- [X] 3-1: _HTML & CSS - Estruturas de página_
-- [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [X] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - Lessons Learned]()_
+##### Bloco 6: [HTML e CSS: Forms, Flexbox e Responsivo](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-06-html-e-css-forms-flexbox-e-responsivo)
+- [x] 6.1 - HTML & CSS - Forms
+- [x] 6.2 - Bibliotecas JavaScript e Frameworks CSS
+- [x] 6.3 - Introdução - CSS Flexbox
+- [x] 6.3 - CSS Flexbox - Parte 1
+- [x] 6.4 - CSS Flexbox - Parte 2
+- [x] 6.5 - CSS Responsivo - Mobile First
+- [x] 6.6 - Projeto - Trybewarts
 
-##### Bloco 4: Introdução à JavaScript e Lógica de Programação
+##### Bloco 7: [Introdução à JavaScript ES6 e Testes Unitários](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-07-introducao-a-javascript-es6-e-testes-unitarios)
+- [x] 7.1 - JavaScript ES6 - let, const, arrow functions e template literals
+- [x] 7.2 - JavaScript ES6 - Fluxo de exceção e Objetos
+- [x] 7.3 - Primeiros passos em Jest
+- [x] 7.4 - Projeto - JavaScript Testes Unitários
 
-- [X] 4-1: _JavaScript - Primeiros passos_
-- [X] 4-2: _JavaScript - Array e loop For_
-- [X] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
-- [X] 4-4: _JavaScript - Objetos e funções_
-- [X] 4-5: _[Projeto - Playground Functions]()_
+##### Bloco 8: [Higher Order Functions do JavaScript ES6](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-08-high-order-functions-do-javascript-es6)
+- [x] 8.1 - JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
+- [x] 8.2 - JavaScript ES6 - Higher Order Functions - map e filter
+- [x] 8.3 - JavaScript ES6 - Higher Order Functions - reduce
+- [x] 8.4 - JavaScript ES6 - spread operator, parâmetro rest, destructuring e mais
+- [x] 8.5 - Projeto - Zoo functions
 
-##### Bloco 5: Javascript: DOM, Eventos e Web Storage
+##### Bloco 9: [JavaScript Assíncrono e Promises](https://github.com/alvesgf16/trybe-exercises/tree/master/fundamentos/bloco-09-javascript-assincrono-e-promises)
+- [x] 9.1 - JavaScript Assíncrono e Callbacks
+- [x] 9.2 - JavaScript Assíncrono - Fetch API e async/await
+- [x] 9.3 - Jest - Testes Assíncronos 
+- [x] 9.4 - Projeto - Carrinho de Compras
 
-- [X] 5-1: _JavaScript - DOM e seletores_
-- [x] 5-2: _JavaScript - Trabalhando com elementos_
-- [x] 5-3: _JavaScript - Eventos_
-- [x] 5-4: _JavaScript - Web Storage_
-- [x] 5-5: _[Projeto - Arte com Pixels]()_
-- [x] 5-6: _[Projeto - Lista de tarefas]()_
-- [ ] 5-7: _[Projeto - Meme Generator]()_
-- [ ] 5-7: _[Projeto - Adivinhe a Cor]()_
-- [ ] 5-7: _[Projeto - Carta Misteriosa]()_
+## Desenvolvimento Front-end :heavy_check_mark:
 
-##### Bloco 6: HTML & CSS: Forms, Flexbox e Responsivo
+##### Bloco 10: [Introdução à React](https://github.com/alvesgf16/trybe-exercises/tree/master/front-end/bloco-11-introducao-a-react)
+- [x] 10.1 - Introdução - Front-end
+- [x] 10.1 - Introdução - React
+- [x] 10.1 - 'Hello, world!' no React!
+- [x] 10.2 - Componentes React
+- [x] 10.3 - Projeto - Movie Cards Library
 
-- [X] 6-1: _HTML & CSS - Forms_
-- [x] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
-- [X] 6-3: _CSS Flexbox - Parte 1_
-- [X] 6-4: _CSS Flexbox - Parte 2_
-- [X] 6-5: _CSS Responsivo - Mobile First_
-- [X] 6-6: _[Projeto - Trybewarts]()_
+##### Bloco 11: [Componentes com Estado, Eventos e Formulários com React](https://github.com/alvesgf16/trybe-exercises/tree/master/front-end/bloco-12-componentes-com-estado-eventos-e-formularios-com-react)
+- [x] 11.1 - Componentes com estado e eventos
+- [X] 11.2 - Formulários no React
+- [X] 11.3 - Projeto - Tryunfo
 
-##### Bloco 7: Introdução à JavaScript ES6 e Testes Unitários
+##### Bloco 12: [Ciclo de Vida de Componentes e React Router](https://github.com/alvesgf16/trybe-exercises/tree/master/front-end/bloco-13-ciclo-de-vida-de-componentes-e-react-router)
+- [x] 12.1 - Ciclo de vida de componentes
+- [x] 12.2 - React Router
+- [x] 12.3 - Projeto - Trybetunes
 
-- [x] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [X] 7-2: _JavaScript ES6 - Objects_
-- [X] 7-3: _Primeiros passos no Jest_
-- [X] 7-4: _[Projeto - JavaScript Testes Unitários]()_
+##### Bloco 13: [Metodologias Ágeis](https://github.com/alvesgf16/trybe-exercises/tree/master/front-end/bloco-14-metodologias-ageis/dia-01-metodologias-ageis)
+- [x] 13.1 - Metodologias Ágeis
+- [x] 13.2 - Projeto - Frontend Online Store
 
-##### Bloco 8: Higher Order Functions do JavaScript ES6
+##### Bloco 14: [Testes automatizados com React Testing Library](https://github.com/alvesgf16/trybe-exercises/tree/master/front-end/bloco-15-testes-automatizados-com-react-testing-library)
+- [x] 14.1 - RTL - Primeiros passos
+- [x] 14.2 - RTL - Mocks e Inputs
+- [x] 14.3 - RTL - Testando React Router
+- [x] 14.4 - Projeto - Testes em React
 
-- [X] 8-1: _JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort_
-- [X] 8-2: _JavaScript ES6 - Higher Order Functions - map e filter_
-- [X] 8-3: _JavaScript ES6 - Higher Order Functions - reduce_
-- [X] 8-4: _JavaScript ES6 - spread operator, rest parameter, destructuring e mais_
-- [X] 8-5: _[Projeto - Zoo functions]()_
+##### Bloco 15: [Gerenciamento de estado com Redux](https://github.com/alvesgf16/trybe-exercises/tree/master/front-end/bloco-16-gerenciamento-de-estado-com-redux)
+- [x] 15.1 - Introdução ao Redux - O estado global da aplicação
+- [x] 15.2 - Usando o Redux no React
+- [x] 15.3 - Usando o Redux no React - Prática
+- [x] 15.4 - Usando o Redux no React - Actions Assíncronas
+- [x] 15.5 - Testes em React-Redux
+- [x] 15.6 - Projeto - TrybeWallet
 
-##### Bloco 9: JavaScript Assíncrono e Promises
+##### Bloco 16: Projeto Jogo de Trivia
+- [x] 16.1 - Projeto - Jogo de Trivia
 
-- [X] 9-1: _JavaScript Assíncrono e Callbacks_
-- [X] 9-2: _JavaScript Promises_
-- [X] 9-3: _Jest - Testes Assíncronos_
-- [X] 9-4: _[Projeto - Carrinho de Compras]()_
+##### Bloco 17: [Context API e React Hooks](https://github.com/alvesgf16/trybe-exercises/tree/master/front-end/bloco-18-context-api-e-react-hooks)
+- [x] 17.1 - Context API do React
+- [x] 17.2 - React Hooks - useState e useContext
+- [x] 17.3 - React Hooks - useEffect e Hooks customizados
+- [x] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
 
-## Desenvolvimento Front-end :hourglass_flowing_sand:
+##### Bloco 18: Projeto App de Receitas
+- [x] 18.1 - Projeto - App de Receitas
 
-##### Bloco 10: Introdução - React
+## Desenvolvimento Back-end :hourglass_flowing_sand:
 
-- [X] 10-1: _'Hello, world!' no React!_
-- [X] 10-2: _Componentes React_
-- [X] 10-3: _[Projeto - Movie Cards Library]()_
+##### Bloco 19: [Docker: Utilizando Containers](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-19-docker-utilizando-containers)
+- [x] 19.1 - Introdução - Back-end
+- [x] 19.1 - Utilizando Containers - Docker
+- [x] 19.2 - Manipulação e Criação de Imagens no Docker
+- [x] 19.3 - Orquestrando Containers com Docker Compose
+- [x] 19.4 - Projeto - Docker Todo-list   
+
+##### Bloco 20: [Introdução à SQL](https://github.com/alvesgf16/trybe-exercises/tree/master/03-back-end/bloco-20-introducao-a-sql)
+- [x] 20.1 - Introdução - Bancos de dados relacionais
+- [x] 20.1 - Banco de dados SQL
+- [x] 20.2 - Encontrando dados em um banco de dados
+- [x] 20.3 - Filtrando dados de forma específica
+- [x] 20.4 - Manipulando tabelas
+- [x] 20.5 - Projeto - All For One
+
+##### Bloco 21: [Funções SQL, Joins e Subqueries](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-21-funcoes-sql-joins-e-subqueries)
+- [x] 21.1 - Funções mais usadas no SQL
+- [x] 21.2 - Descomplicando JOINs
+- [x] 21.3 - Transformando ideias em um modelo de banco de dados
+- [x] 21.4 - Projeto - One For All
+
+##### Bloco 22: [Introdução ao desenvolvimento Web com Node.js](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-22-introducao-ao-desenvolvimento-web-com-node-js)
+- [x] 22.1 - Intro - Node.js
+- [x] 22.1 - Node.js - Um motor JavaScript
+- [x] 22.2 - Node.js - Fluxo Assíncrono
+- [x] 22.3 - Mocha, Chai e Sinon - Testes de Back-end com Node.js
+- [x] 22.4 - Express - HTTP com Node.js
+- [x] 22.5 - Express - Middlewares
+- [x] 22.6 - Projeto - Talker Manager
+
+##### Bloco 23: [Node.js: Camada de Serviço e Arquitetura Rest e Restful](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-23-node-js-camada-de-servico-e-arquitetura-rest-e-restful)
+- [x] 23.1 - Introdução - Arquitetura de Software
+- [x] 23.1 - Arquitetura de Software - Camada de Model
+- [x] 23.2 - Arquitetura de Software - Camada de Controller e Service
+- [x] 23.3 - Arquitetura Web - Rest e Restful
+- [x] 23.4 - Arquitetura de Software - Testando as Camadas
+- [x] 23.5 - Projeto - Store Manager
+
+##### Bloco 24: [Node.js: ORM e Autenticação](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-24-node-js-orm-e-autenticacao)
+- [x] 24.1 - ORM - Interface da aplicação com o banco de dados
+- [x] 24.2 - ORM - Associations
+- [x] 24.3 - JWT - (JSON Web Token)
+- [x] 24.4 - Testando APIs com Testes de Integração
+- [x] 24.5 - Projeto - API de Blogs
+
+##### Bloco 25: [Deployment](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-25-deployment)
+- [x] 29.1 - Introdução - Deploy
+- [x] 29.1 - Infraestrutura - Deploy com Heroku
+- [x] 29.2 - Deploy Docker & Heroku
+- [x] 29.3 - Projeto - Stranger Things
+
+##### Bloco 26: [TypeScript](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-26-typescript)
+- [x] 26.1 - Introdução - TypeScript
+- [x] 26.1 - Introdução ao TypeScript
+- [x] 26.2 - Tipagem Estática e Generics
+- [x] 26.3 - Express com TypeScript
+- [x] 26.4 - Projeto - Trybesmith
+
+##### Bloco 27: [Programação Orientada a Objetos (POO) e SOLID](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-27-programacao-orientada-a-objetos-poo-e-solid)
+- [x] 27.1 - Introdução à Orientação a Objetos
+- [x] 27.2 - Herança e Interfaces
+- [x] 27.3 - Polimorfismo
+- [x] 27.4 - SOLID - Introdução e Princípios S, O e D
+- [x] 27.5 - SOLID - Princípios L e I
+- [x] 27.6 - Projeto - Trybers & Dragons
+
+##### Bloco 28: Projeto - TFC - Trybe Futebol Clube
+- [x] 28.1 - Projeto - TFC - Trybe Futebol Clube
+
+##### Bloco 29: [Introdução ao MongoDB](https://github.com/alvesgf16/trybe-exercises/tree/master/back-end/bloco-29-introducao-ao-mongodb)
+- [x] 29.1 - Introdução - NoSQL
+- [x] 29.1 - MongoDB - Introdução
+- [x] 29.2 - Filter Operators
+- [x] 29.3 - Operadores de consulta 
+- [ ] 29.4 - Updates Simples
+- [ ] 29.5 - Updates Complexos - Arrays
+- [ ] 29.6 - Projeto - Commerce
+
+##### Bloco 30: MongoDB com Node.js e POO
+- [ ] 30.1 - MongoDB e arquitetura MSC
+- [ ] 30.2 - MongoDB e POO
+- [ ] 30.3 - Projeto - Car Shop
+
+##### Bloco 31: Projeto - App de Delivery
+- [ ] 31.1 - Projeto - App de Delivery
+
+##### Bloco 32: MasterClass - VPS, CI/CD
+- [ ] 32.1 - Dia 1
+- [ ] 32.2 - Dia 2
+
+## Ciência da Computação :hourglass_flowing_sand:
+
+##### Bloco 33: Introdução à Python
+- [ ] 33.1 - Introdução - Ciência da Computação
+- [ ] 33.1 - Aprendendo Python
+- [ ] 33.2 - Entrada e Saída de Dados
+- [ ] 33.3 - Testes
+- [ ] 33.4 - Projeto - Job Insights
+
+##### Bloco 34: Padrões de Projeto
+- [ ] 34.1 - POO em Python
+- [ ] 34.2 - Padrões - Iterator, Adapter, Strategy
+- [ ] 34.3 - Padrões - Decorator, Observer, Factory
+- [ ] 34.4 - Projeto - Relatórios de Estoque
+
+##### Bloco 35: Redes e Raspagem de Dados
+- [ ] 33.1 - Arquitetura de redes
+- [ ] 33.2 - Redes de computadores, ferramentas e segurança
+- [ ] 34.3 - Raspagem de Dados
+- [ ] 33.4 - Projeto - Tech news
+
+##### Bloco 36: Algoritmos
+- [ ] 36.1 - Complexidade de Algoritmos
+- [ ] 36.2 - Recursividade e Estratégias para solução de problemas
+- [ ] 36.3 - Algoritmos de ordenação e busca
+- [ ] 36.4 - Projeto - Algoritmos
+
+##### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
+- [ ] 37.1 - Arquitetura de Computadores
+- [ ] 37.2 - Arrays
+- [ ] 37.3 - Hashmap e Dict
+- [ ] 37.4 - Set
+- [ ] 37.4 - Projeto - Restaurant Orders
+
+##### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
+- [ ] 38.1 - Nó e Listas Encadeadas
+- [ ] 38.2 - Pilhas e Filas
+- [ ] 38.4 - Projeto - TING - Trybe Is Not Google
