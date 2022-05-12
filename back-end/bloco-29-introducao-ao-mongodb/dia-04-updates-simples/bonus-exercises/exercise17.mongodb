@@ -1,0 +1,15 @@
+use("class");
+
+db.xmen.updateMany({
+  class: {
+    $in: [
+      "gama",
+    ],
+  },
+}, {
+  $min: {
+    power: 300,
+  },
+});
+
+db.xmen.find();
