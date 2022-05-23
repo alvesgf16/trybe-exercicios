@@ -16,4 +16,6 @@ routes.put(booksId, bookController.update);
 routes.delete(booksId, bookController.delete);
 routes.get(booksId, bookController.getById);
 
+routes.get('/movies', movieController.getAll);
+
 export default routes;
