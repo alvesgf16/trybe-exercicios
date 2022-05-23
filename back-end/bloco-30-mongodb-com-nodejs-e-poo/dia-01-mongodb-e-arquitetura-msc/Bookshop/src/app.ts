@@ -2,7 +2,7 @@ import express from 'express';
 import routes from './routes';
 import connection from './database/models/connection';
 
-class App {
+export default class App {
   public express: express.Application;
 
   public connection: Promise<typeof import('mongoose')>;
@@ -22,5 +22,3 @@ class App {
     this.express.use(routes);
   }
 }
-
-export default App;
