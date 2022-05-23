@@ -26,6 +26,7 @@ class BookModel {
     const book = await this.bookModel.findOneAndUpdate(
       { _id: id },
       { ...bookData },
+      { new: true },
     );
     return book;
   }
