@@ -25,13 +25,9 @@ class FrameController extends Controller<Frame> {
     try {
       const frame = await this.service.create(body);
 
-      if (!frame) {
-        return res.status(500).json({ error: this.errors.internal });
-      }
+      if (!frame) return res.status(500).json({ error: this.errors.internal });
 
-      if ('error' in frame) {
-        return res.status(400).json(frame);
-      }
+      if ('error' in frame) return res.status(400).json(frame);
 
       return res.status(201).json(frame);
     } catch (err) {
@@ -44,11 +40,36 @@ class FrameController extends Controller<Frame> {
     res: Response<Frame | ResponseError>,
   ): Promise<typeof res> => {
     const { id } = req.params;
+
     try {
       const frame = await this.service.readOne(id);
+
       return frame
         ? res.json(frame)
         : res.status(404).json({ error: this.errors.notFound });
+    } catch (error) {
+      return res.status(500).json({ error: this.errors.internal });
+    }
+  };
+
+  update = async (
+    req: Request<{ id: string }>,
+    res: Response<Frame | ResponseError>,
+  ): Promise<typeof res> => {
+    const { id } = req.params;
+
+    if (!id) return res.status(400).json({ error: this.errors.requiredId });
+
+    try {
+      const { body } = req;
+      
+      const frame = await this.service.update(id, body);
+      
+      if (!frame) return res.status(500).json({ error: this.errors.internal });
+
+      if ('error' in frame) return res.status(400).json(frame);
+      
+      return res.status(200).json(frame);
     } catch (error) {
       return res.status(500).json({ error: this.errors.internal });
     }

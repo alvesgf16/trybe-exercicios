@@ -10,11 +10,18 @@ class LensService extends Service<Lens> {
   create = async (obj: Lens): Promise<Lens | null | ServiceError> => {
     const parsed = LensSchema.safeParse(obj);
 
-    if (!parsed.success) {
-      return { error: parsed.error };
-    }
+    if (!parsed.success) return { error: parsed.error };
 
     return this.model.create(obj);
+  };
+
+  update = async (id: string, obj: Lens): Promise<Lens | null
+  | ServiceError> => {
+    const parsed = LensSchema.safeParse(obj);
+
+    if (!parsed.success) return { error: parsed.error };
+
+    return this.model.update(id, obj);
   };
 }
 

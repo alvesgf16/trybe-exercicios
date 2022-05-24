@@ -10,11 +10,18 @@ class FrameService extends Service<Frame> {
   create = async (obj: Frame): Promise<Frame | null | ServiceError> => {
     const parsed = FrameSchema.safeParse(obj);
 
-    if (!parsed.success) {
-      return { error: parsed.error };
-    }
+    if (!parsed.success) return { error: parsed.error };
 
     return this.model.create(obj);
+  };
+
+  update = async (id: string, obj: Frame): Promise<Frame | null
+  | ServiceError> => {
+    const parsed = FrameSchema.safeParse(obj);
+
+    if (!parsed.success) return { error: parsed.error };
+
+    return this.model.update(id, obj);
   };
 }
 
