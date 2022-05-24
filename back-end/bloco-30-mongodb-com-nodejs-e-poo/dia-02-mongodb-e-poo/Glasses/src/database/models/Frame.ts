@@ -1,5 +1,5 @@
 import { model as createModel } from 'mongoose';
-import Frame from '../interfaces/Frame';
+import Frame from '../../interfaces/Frame';
 import frameSchema from '../schemas/Frame';
 import MongoModel from './MongoModel';
 

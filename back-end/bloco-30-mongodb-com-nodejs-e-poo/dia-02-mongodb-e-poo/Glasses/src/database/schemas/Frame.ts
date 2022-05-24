@@ -1,5 +1,5 @@
 import { Schema } from 'mongoose';
-import { FrameDocument } from '../interfaces/Frame';
+import { FrameDocument } from '../../interfaces/Frame';
 
 const frameSchema = new Schema<FrameDocument>({
   material: String,

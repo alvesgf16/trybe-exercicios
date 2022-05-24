@@ -1,5 +1,5 @@
 import { model as createModel } from 'mongoose';
-import Lens from '../interfaces/Lens';
+import Lens from '../../interfaces/Lens';
 import lensSchema from '../schemas/Lens';
 import MongoModel from './MongoModel';
 

@@ -1,5 +1,5 @@
 import { Schema } from 'mongoose';
-import { LensDocument } from '../interfaces/Lens';
+import { LensDocument } from '../../interfaces/Lens';
 
 const lensSchema = new Schema<LensDocument>({
   degree: Number,
