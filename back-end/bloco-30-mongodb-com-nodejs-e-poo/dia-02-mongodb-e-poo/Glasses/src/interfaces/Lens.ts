@@ -8,5 +8,7 @@ const LensSchema = z.object({
 
 type Lens = z.infer<typeof LensSchema>;
 
+interface LensDocument extends Lens, Document {}
+
 export default Lens;
-export { LensSchema };
+export { LensSchema, LensDocument };
