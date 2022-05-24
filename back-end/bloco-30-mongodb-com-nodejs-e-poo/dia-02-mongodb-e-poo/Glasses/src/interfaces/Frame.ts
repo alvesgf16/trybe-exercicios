@@ -10,5 +10,7 @@ const FrameSchema = z.object({
 
 type Frame = z.infer<typeof FrameSchema>;
 
+interface FrameDocument extends Frame, Document {}
+
 export default Frame;
-export { FrameSchema };
+export { FrameSchema, FrameDocument };
