@@ -9,4 +9,10 @@ export default class CupModel {
 
     return data;
   }
+
+  public async getByYear(year: number) {
+    const item = await this.model.find({ year });
+
+    return item;
+  }
 }

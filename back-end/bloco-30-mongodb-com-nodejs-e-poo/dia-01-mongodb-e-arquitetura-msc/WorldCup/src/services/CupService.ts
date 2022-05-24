@@ -8,4 +8,10 @@ export default class CupService {
 
     return data;
   }
+
+  public async getByYear(year: number) {
+    const item = await this.model.getByYear(year);
+
+    return item;
+  }
 }
