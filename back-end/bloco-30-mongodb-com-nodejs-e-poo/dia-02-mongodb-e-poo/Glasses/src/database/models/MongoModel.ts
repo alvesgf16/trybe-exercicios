@@ -8,8 +8,8 @@ abstract class MongoModel<T> implements Model<T> {
 
   read = async (): Promise<T[]> => this.model.find();
 
-  readOne = async (id: string): Promise<T | null> =>
-    this.model.findOne({ _id: id });
+  readOne = async (_id: string): Promise<T | null> =>
+    this.model.findOne({ _id });
 }
 
 export default MongoModel;
