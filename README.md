@@ -213,8 +213,8 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 31.1 - Projeto - App de Delivery
 
 ##### Bloco 32: MasterClass - VPS, CI/CD
-- [ ] 32.1 - Dia 1
-- [ ] 32.2 - Dia 2
+- [x] 32.1 - Dia 1
+- [x] 32.2 - Dia 2
 
 ## Ciência da Computação :hourglass_flowing_sand:
 
