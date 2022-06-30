@@ -124,7 +124,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 18: Projeto App de Receitas
 - [x] 18.1 - Projeto - App de Receitas
 
-## Desenvolvimento Back-end :hourglass_flowing_sand:
+## Desenvolvimento Back-end :heavy_check_mark:
 
 ##### Bloco 19: [Docker: Utilizando Containers](https://github.com/alvesgf16/trybe-exercicios/tree/master/back-end/bloco-19-docker-utilizando-containers)
 - [x] 19.1 - Introdução - Back-end
@@ -201,16 +201,16 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [x] 29.2 - Filter Operators
 - [x] 29.3 - Operadores de consulta 
 - [x] 29.4 - Updates Simples
-- [ ] 29.5 - Updates Complexos - Arrays
-- [ ] 29.6 - Projeto - Commerce
+- [x] 29.5 - Updates Complexos - Arrays
+- [x] 29.6 - Projeto - Commerce
 
 ##### Bloco 30: MongoDB com Node.js e POO
-- [ ] 30.1 - MongoDB e arquitetura MSC
-- [ ] 30.2 - MongoDB e POO
-- [ ] 30.3 - Projeto - Car Shop
+- [x] 30.1 - MongoDB e arquitetura MSC
+- [x] 30.2 - MongoDB e POO
+- [x] 30.3 - Projeto - Car Shop
 
 ##### Bloco 31: Projeto - App de Delivery
-- [ ] 31.1 - Projeto - App de Delivery
+- [x] 31.1 - Projeto - App de Delivery
 
 ##### Bloco 32: MasterClass - VPS, CI/CD
 - [ ] 32.1 - Dia 1
