@@ -16,3 +16,8 @@ class HashMap:
     def has(self, id_num):
         address = self.get_address(id_num)
         return self._buckets[address] is not None
+
+    def update_value(self, id_num, new_name):
+        if self.has(id_num):
+            address = self.get_address(id_num)
+            self._buckets[address].name = new_name

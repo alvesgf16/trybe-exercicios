@@ -11,3 +11,7 @@ for employee in employee_objects:
     employee_hash_map.insert(employee)
 
 print(employee_hash_map.get_value(23))
+
+print(employee_hash_map.get_value(10))
+employee_hash_map.update_value(10, "name30")
+print(employee_hash_map.get_value(10))
