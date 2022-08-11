@@ -7,5 +7,8 @@ class Conjunto:
             [index for index, value in enumerate(self.conjunto) if value]
         )
 
+    def __contains__(self, item):
+        return self.conjunto[item]
+
     def add(self, item):
         self.conjunto[item] = True

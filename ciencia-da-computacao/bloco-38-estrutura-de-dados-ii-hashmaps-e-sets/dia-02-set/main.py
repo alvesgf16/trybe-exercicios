@@ -7,3 +7,5 @@ for number in [0, 10, 100, 1000]:
     conjunto.add(number)
 
 print(conjunto)
+print(0 in conjunto)
+print(1 in conjunto)
