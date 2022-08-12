@@ -21,3 +21,14 @@ for number in range(10, 21):
 
 print(conjuntoA.union(conjuntoB))
 print(conjuntoA.intersection(conjuntoB))
+print(conjuntoA.difference(conjuntoB))
+
+conjuntoC = Conjunto()
+
+for number in range(1, 5):
+    conjuntoC.add(number)
+
+print(conjuntoC.issubset(conjuntoA))
+print(conjuntoA.issubset(conjuntoC))
+print(conjuntoC.issuperset(conjuntoA))
+print(conjuntoA.issuperset(conjuntoC))

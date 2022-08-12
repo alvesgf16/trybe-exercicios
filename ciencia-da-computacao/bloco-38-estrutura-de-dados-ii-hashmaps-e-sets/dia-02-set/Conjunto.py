@@ -36,3 +36,30 @@ class Conjunto:
                     conjunto.add(index)
 
         return conjunto
+
+    def difference(self, conjuntoB):
+        conjunto = Conjunto()
+
+        for index, valueA in enumerate(self.conjunto):
+            if valueA:
+                valueB = conjuntoB.conjunto[index]
+                if not valueB:
+                    conjunto.add(index)
+
+        return conjunto
+
+    def issubset(self, conjuntoB):
+        for index, value in enumerate(self.conjunto):
+            if value:
+                if not conjuntoB.conjunto[index]:
+                    return False
+
+        return True
+
+    def issuperset(self, conjuntoB):
+        for index, value in enumerate(conjuntoB.conjunto):
+            if value:
+                if not self.conjunto[index]:
+                    return False
+
+        return True
