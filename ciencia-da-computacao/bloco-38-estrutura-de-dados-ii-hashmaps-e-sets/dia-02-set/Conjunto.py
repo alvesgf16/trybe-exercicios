@@ -12,3 +12,16 @@ class Conjunto:
 
     def add(self, item):
         self.conjunto[item] = True
+
+    def union(self, conjuntoB):
+        conjunto = Conjunto()
+
+        for index, value in enumerate(self.conjunto):
+            if value:
+                conjunto.add(index)
+
+        for index, value in enumerate(conjuntoB.conjunto):
+            if value:
+                conjunto.add(index)
+
+        return conjunto
