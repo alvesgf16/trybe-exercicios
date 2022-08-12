@@ -20,3 +20,4 @@ for number in range(10, 21):
     conjuntoB.add(number)
 
 print(conjuntoA.union(conjuntoB))
+print(conjuntoA.intersection(conjuntoB))

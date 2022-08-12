@@ -25,3 +25,14 @@ class Conjunto:
                 conjunto.add(index)
 
         return conjunto
+
+    def intersection(self, conjuntoB):
+        conjunto = Conjunto()
+
+        for index, valueA in enumerate(self.conjunto):
+            if valueA:
+                valueB = conjuntoB.conjunto[index]
+                if valueB:
+                    conjunto.add(index)
+
+        return conjunto
